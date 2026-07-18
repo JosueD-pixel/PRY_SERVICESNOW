@@ -81,6 +81,24 @@
     <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_login.cs" />
     <Compile Include="cls_menu.cs" />
+    <Compile Include="frmTrabajadoresAGREGAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrabajadoresAGREGAR.Designer.cs">
+      <DependentUpon>frmTrabajadoresAGREGAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrabajadoresELIMINAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrabajadoresELIMINAR.Designer.cs">
+      <DependentUpon>frmTrabajadoresELIMINAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrabajdoresMODIFICAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrabajdoresMODIFICAR.Designer.cs">
+      <DependentUpon>frmTrabajdoresMODIFICAR.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +113,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmTrabajadoresAGREGAR.resx">
+      <DependentUpon>frmTrabajadoresAGREGAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrabajadoresELIMINAR.resx">
+      <DependentUpon>frmTrabajadoresELIMINAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrabajdoresMODIFICAR.resx">
+      <DependentUpon>frmTrabajdoresMODIFICAR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +205,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img_elisesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn_grupo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_hojablanca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_apoyo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_limpiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_apoyo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton_eliminar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_apoyo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_apoyo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_apoyo4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

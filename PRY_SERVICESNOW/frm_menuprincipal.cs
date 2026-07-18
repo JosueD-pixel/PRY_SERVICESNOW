@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -124,6 +125,33 @@ namespace PRY_SERVICESNOW
         private void btn_reservas_Click(object sender, EventArgs e)
         {
             MostrarSubMenu(pnl_reservas);
+        }
+
+        private void btn_agregarTra_Click(object sender, EventArgs e)
+        {
+            menu = new cls_menu();
+            menu.AgregarAlContenedor(new frmTrabajadoresAGREGAR(), pnl_formulario);
+        }
+
+        private void btn_eliminartra_Click(object sender, EventArgs e)
+        {
+            menu = new cls_menu();
+            menu.AgregarAlContenedor(new frmTrabajadoresELIMINAR(), pnl_formulario);
+        }
+
+        private void btn_modificarTra_Click(object sender, EventArgs e)
+        {
+            menu.AgregarAlContenedor(
+            new frmTrabajdoresMODIFICAR(false),
+            pnl_formulario);
+
+        }
+
+        private void btn_buscarTra_Click(object sender, EventArgs e)
+        {
+            menu.AgregarAlContenedor(
+            new frmTrabajdoresMODIFICAR(true),
+            pnl_formulario);
         }
     }
 }
