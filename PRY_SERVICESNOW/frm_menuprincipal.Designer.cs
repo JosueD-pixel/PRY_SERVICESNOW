@@ -30,12 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_menuprincipal));
             this.pnl_superior = new System.Windows.Forms.Panel();
-            this.pnl_menu = new System.Windows.Forms.Panel();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblRol = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnl_salas = new System.Windows.Forms.Panel();
+            this.pnl_menu = new System.Windows.Forms.Panel();
+            this.pnl_reservas = new System.Windows.Forms.Panel();
             this.pnl_trabajadores = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnl_reservas = new System.Windows.Forms.Panel();
+            this.pnl_salas = new System.Windows.Forms.Panel();
+            this.pnl_formulario = new System.Windows.Forms.Panel();
             this.btn_cerrarSesion = new System.Windows.Forms.PictureBox();
             this.btn_Servicios = new System.Windows.Forms.PictureBox();
             this.btn_Mobiliario = new System.Windows.Forms.PictureBox();
@@ -59,14 +62,12 @@
             this.btn_salaAgregar = new System.Windows.Forms.PictureBox();
             this.btn_salas = new System.Windows.Forms.PictureBox();
             this.btn_menu = new System.Windows.Forms.PictureBox();
-            this.lblRol = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
             this.pnl_superior.SuspendLayout();
             this.pnl_menu.SuspendLayout();
-            this.pnl_salas.SuspendLayout();
+            this.pnl_reservas.SuspendLayout();
             this.pnl_trabajadores.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnl_reservas.SuspendLayout();
+            this.pnl_salas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrarSesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Servicios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Mobiliario)).BeginInit();
@@ -105,6 +106,39 @@
             this.pnl_superior.Size = new System.Drawing.Size(1920, 60);
             this.pnl_superior.TabIndex = 0;
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUsuario.Location = new System.Drawing.Point(1673, 9);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(117, 38);
+            this.lblUsuario.TabIndex = 3;
+            this.lblUsuario.Text = "Usuario";
+            // 
+            // lblRol
+            // 
+            this.lblRol.AutoSize = true;
+            this.lblRol.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblRol.Location = new System.Drawing.Point(1314, 9);
+            this.lblRol.Name = "lblRol";
+            this.lblRol.Size = new System.Drawing.Size(53, 38);
+            this.lblRol.TabIndex = 2;
+            this.lblRol.Text = "rol";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(74, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 38);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Menu principal";
+            // 
             // pnl_menu
             // 
             this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
@@ -123,28 +157,17 @@
             this.pnl_menu.Size = new System.Drawing.Size(250, 1020);
             this.pnl_menu.TabIndex = 1;
             // 
-            // label1
+            // pnl_reservas
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(74, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Menu principal";
-            // 
-            // pnl_salas
-            // 
-            this.pnl_salas.Controls.Add(this.pictureBox1);
-            this.pnl_salas.Controls.Add(this.btn_salasModificar);
-            this.pnl_salas.Controls.Add(this.btn_salasEliminar);
-            this.pnl_salas.Controls.Add(this.btn_salaAgregar);
-            this.pnl_salas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_salas.Location = new System.Drawing.Point(0, 50);
-            this.pnl_salas.Name = "pnl_salas";
-            this.pnl_salas.Size = new System.Drawing.Size(250, 181);
-            this.pnl_salas.TabIndex = 1;
+            this.pnl_reservas.Controls.Add(this.btn_buscaReservas);
+            this.pnl_reservas.Controls.Add(this.btn_modificarReservas);
+            this.pnl_reservas.Controls.Add(this.btn_eliminarReservas);
+            this.pnl_reservas.Controls.Add(this.btn_agregarReserva);
+            this.pnl_reservas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_reservas.Location = new System.Drawing.Point(0, 512);
+            this.pnl_reservas.Name = "pnl_reservas";
+            this.pnl_reservas.Size = new System.Drawing.Size(250, 181);
+            this.pnl_reservas.TabIndex = 5;
             // 
             // pnl_trabajadores
             // 
@@ -171,17 +194,25 @@
             this.panel1.Size = new System.Drawing.Size(250, 181);
             this.panel1.TabIndex = 6;
             // 
-            // pnl_reservas
+            // pnl_salas
             // 
-            this.pnl_reservas.Controls.Add(this.btn_buscaReservas);
-            this.pnl_reservas.Controls.Add(this.btn_modificarReservas);
-            this.pnl_reservas.Controls.Add(this.btn_eliminarReservas);
-            this.pnl_reservas.Controls.Add(this.btn_agregarReserva);
-            this.pnl_reservas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_reservas.Location = new System.Drawing.Point(0, 512);
-            this.pnl_reservas.Name = "pnl_reservas";
-            this.pnl_reservas.Size = new System.Drawing.Size(250, 181);
-            this.pnl_reservas.TabIndex = 5;
+            this.pnl_salas.Controls.Add(this.pictureBox1);
+            this.pnl_salas.Controls.Add(this.btn_salasModificar);
+            this.pnl_salas.Controls.Add(this.btn_salasEliminar);
+            this.pnl_salas.Controls.Add(this.btn_salaAgregar);
+            this.pnl_salas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_salas.Location = new System.Drawing.Point(0, 50);
+            this.pnl_salas.Name = "pnl_salas";
+            this.pnl_salas.Size = new System.Drawing.Size(250, 181);
+            this.pnl_salas.TabIndex = 1;
+            // 
+            // pnl_formulario
+            // 
+            this.pnl_formulario.BackColor = System.Drawing.Color.White;
+            this.pnl_formulario.Location = new System.Drawing.Point(312, 98);
+            this.pnl_formulario.Name = "pnl_formulario";
+            this.pnl_formulario.Size = new System.Drawing.Size(1596, 909);
+            this.pnl_formulario.TabIndex = 2;
             // 
             // btn_cerrarSesion
             // 
@@ -277,6 +308,7 @@
             this.btn_buscarTra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_buscarTra.TabIndex = 5;
             this.btn_buscarTra.TabStop = false;
+            this.btn_buscarTra.Click += new System.EventHandler(this.btn_buscarTra_Click);
             // 
             // btn_modificarTra
             // 
@@ -287,6 +319,7 @@
             this.btn_modificarTra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_modificarTra.TabIndex = 4;
             this.btn_modificarTra.TabStop = false;
+            this.btn_modificarTra.Click += new System.EventHandler(this.btn_modificarTra_Click);
             // 
             // btn_eliminartra
             // 
@@ -297,6 +330,7 @@
             this.btn_eliminartra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_eliminartra.TabIndex = 3;
             this.btn_eliminartra.TabStop = false;
+            this.btn_eliminartra.Click += new System.EventHandler(this.btn_eliminartra_Click);
             // 
             // btn_agregarTra
             // 
@@ -307,6 +341,7 @@
             this.btn_agregarTra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_agregarTra.TabIndex = 2;
             this.btn_agregarTra.TabStop = false;
+            this.btn_agregarTra.Click += new System.EventHandler(this.btn_agregarTra_Click);
             // 
             // btn_trabajadoresBuscar
             // 
@@ -423,34 +458,13 @@
             this.btn_menu.TabStop = false;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
-            // lblRol
-            // 
-            this.lblRol.AutoSize = true;
-            this.lblRol.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblRol.Location = new System.Drawing.Point(1314, 9);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(53, 38);
-            this.lblRol.TabIndex = 2;
-            this.lblRol.Text = "rol";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsuario.Location = new System.Drawing.Point(1673, 9);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(117, 38);
-            this.lblUsuario.TabIndex = 3;
-            this.lblUsuario.Text = "Usuario";
-            // 
             // frm_menuprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.pnl_formulario);
             this.Controls.Add(this.pnl_menu);
             this.Controls.Add(this.pnl_superior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -461,10 +475,10 @@
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
             this.pnl_menu.ResumeLayout(false);
-            this.pnl_salas.ResumeLayout(false);
+            this.pnl_reservas.ResumeLayout(false);
             this.pnl_trabajadores.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.pnl_reservas.ResumeLayout(false);
+            this.pnl_salas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_cerrarSesion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Servicios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Mobiliario)).EndInit();
@@ -526,5 +540,6 @@
         private System.Windows.Forms.PictureBox btn_cerrarSesion;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblRol;
+        private System.Windows.Forms.Panel pnl_formulario;
     }
 }
