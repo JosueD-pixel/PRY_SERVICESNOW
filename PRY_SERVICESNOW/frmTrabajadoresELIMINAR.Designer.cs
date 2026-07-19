@@ -32,24 +32,24 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnl_superior = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_tabla = new System.Windows.Forms.Panel();
+            this.dgv_trabajadores = new System.Windows.Forms.DataGridView();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgv_trabajdores = new System.Windows.Forms.DataGridView();
             this.pnl_superior.SuspendLayout();
-            this.pnl_tabla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajdores)).BeginInit();
+            this.pnl_tabla.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -92,6 +92,36 @@
             this.pnl_superior.Size = new System.Drawing.Size(1540, 60);
             this.pnl_superior.TabIndex = 2;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox4.Location = new System.Drawing.Point(1465, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_grupo;
+            this.pictureBox1.Location = new System.Drawing.Point(855, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -106,11 +136,21 @@
             // pnl_tabla
             // 
             this.pnl_tabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.pnl_tabla.Controls.Add(this.dgv_trabajdores);
+            this.pnl_tabla.Controls.Add(this.dgv_trabajadores);
             this.pnl_tabla.Location = new System.Drawing.Point(47, 149);
             this.pnl_tabla.Name = "pnl_tabla";
             this.pnl_tabla.Size = new System.Drawing.Size(1492, 636);
             this.pnl_tabla.TabIndex = 6;
+            // 
+            // dgv_trabajadores
+            // 
+            this.dgv_trabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_trabajadores.Location = new System.Drawing.Point(40, 19);
+            this.dgv_trabajadores.Name = "dgv_trabajadores";
+            this.dgv_trabajadores.RowHeadersWidth = 51;
+            this.dgv_trabajadores.RowTemplate.Height = 24;
+            this.dgv_trabajadores.Size = new System.Drawing.Size(1416, 573);
+            this.dgv_trabajadores.TabIndex = 0;
             // 
             // txt_buscar
             // 
@@ -152,46 +192,6 @@
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox4.Location = new System.Drawing.Point(1465, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_grupo;
-            this.pictureBox1.Location = new System.Drawing.Point(855, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dgv_trabajdores
-            // 
-            this.dgv_trabajdores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_trabajdores.Location = new System.Drawing.Point(40, 19);
-            this.dgv_trabajdores.Name = "dgv_trabajdores";
-            this.dgv_trabajdores.RowHeadersWidth = 51;
-            this.dgv_trabajdores.RowTemplate.Height = 24;
-            this.dgv_trabajdores.Size = new System.Drawing.Size(1416, 573);
-            this.dgv_trabajdores.TabIndex = 0;
-            // 
             // frmTrabajadoresELIMINAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -212,13 +212,13 @@
             this.Text = "frmTrabajadoresELIMINAR";
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
-            this.pnl_tabla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajdores)).EndInit();
+            this.pnl_tabla.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +239,6 @@
         private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox btn_eliminar;
-        private System.Windows.Forms.DataGridView dgv_trabajdores;
+        private System.Windows.Forms.DataGridView dgv_trabajadores;
     }
 }

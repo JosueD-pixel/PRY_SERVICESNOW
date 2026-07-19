@@ -31,12 +31,15 @@
             this.pnl_superior = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pnl_tabla = new System.Windows.Forms.Panel();
-            this.dgv_trabajdores = new System.Windows.Forms.DataGridView();
+            this.dgv_trabajadores = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txt_cp = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
@@ -55,9 +58,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_colonia = new System.Windows.Forms.TextBox();
-            this.cmb_correo = new System.Windows.Forms.TextBox();
+            this.txt_correo = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.cmb_telefono = new System.Windows.Forms.TextBox();
+            this.txt_telefono = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.cmb_puesto = new System.Windows.Forms.ComboBox();
@@ -66,28 +69,25 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.cmb_password = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_limpiar = new System.Windows.Forms.PictureBox();
             this.btnModificar = new System.Windows.Forms.PictureBox();
             this.pcb_apoyo = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_tabla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajdores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_apoyo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
@@ -122,6 +122,36 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(31, 60);
             this.panel2.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_grupo;
+            this.pictureBox1.Location = new System.Drawing.Point(855, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -164,21 +194,21 @@
             // pnl_tabla
             // 
             this.pnl_tabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.pnl_tabla.Controls.Add(this.dgv_trabajdores);
+            this.pnl_tabla.Controls.Add(this.dgv_trabajadores);
             this.pnl_tabla.Location = new System.Drawing.Point(52, 136);
             this.pnl_tabla.Name = "pnl_tabla";
             this.pnl_tabla.Size = new System.Drawing.Size(1492, 356);
             this.pnl_tabla.TabIndex = 7;
             // 
-            // dgv_trabajdores
+            // dgv_trabajadores
             // 
-            this.dgv_trabajdores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_trabajdores.Location = new System.Drawing.Point(17, 16);
-            this.dgv_trabajdores.Name = "dgv_trabajdores";
-            this.dgv_trabajdores.RowHeadersWidth = 51;
-            this.dgv_trabajdores.RowTemplate.Height = 24;
-            this.dgv_trabajdores.Size = new System.Drawing.Size(1416, 312);
-            this.dgv_trabajdores.TabIndex = 0;
+            this.dgv_trabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_trabajadores.Location = new System.Drawing.Point(17, 16);
+            this.dgv_trabajadores.Name = "dgv_trabajadores";
+            this.dgv_trabajadores.RowHeadersWidth = 51;
+            this.dgv_trabajadores.RowTemplate.Height = 24;
+            this.dgv_trabajadores.Size = new System.Drawing.Size(1416, 312);
+            this.dgv_trabajadores.TabIndex = 0;
             // 
             // panel6
             // 
@@ -313,9 +343,9 @@
             this.panel7.Controls.Add(this.label16);
             this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.txt_colonia);
-            this.panel7.Controls.Add(this.cmb_correo);
+            this.panel7.Controls.Add(this.txt_correo);
             this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.cmb_telefono);
+            this.panel7.Controls.Add(this.txt_telefono);
             this.panel7.Controls.Add(this.label12);
             this.panel7.Location = new System.Drawing.Point(569, 513);
             this.panel7.Name = "panel7";
@@ -371,13 +401,13 @@
             this.txt_colonia.Size = new System.Drawing.Size(225, 34);
             this.txt_colonia.TabIndex = 22;
             // 
-            // cmb_correo
+            // txt_correo
             // 
-            this.cmb_correo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_correo.Location = new System.Drawing.Point(223, 163);
-            this.cmb_correo.Name = "cmb_correo";
-            this.cmb_correo.Size = new System.Drawing.Size(225, 34);
-            this.cmb_correo.TabIndex = 22;
+            this.txt_correo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_correo.Location = new System.Drawing.Point(223, 163);
+            this.txt_correo.Name = "txt_correo";
+            this.txt_correo.Size = new System.Drawing.Size(225, 34);
+            this.txt_correo.TabIndex = 22;
             // 
             // label17
             // 
@@ -390,13 +420,13 @@
             this.label17.TabIndex = 20;
             this.label17.Text = "Calle:";
             // 
-            // cmb_telefono
+            // txt_telefono
             // 
-            this.cmb_telefono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_telefono.Location = new System.Drawing.Point(223, 227);
-            this.cmb_telefono.Name = "cmb_telefono";
-            this.cmb_telefono.Size = new System.Drawing.Size(225, 34);
-            this.cmb_telefono.TabIndex = 21;
+            this.txt_telefono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefono.Location = new System.Drawing.Point(223, 227);
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(225, 34);
+            this.txt_telefono.TabIndex = 21;
             // 
             // label12
             // 
@@ -418,7 +448,7 @@
             this.panel8.Controls.Add(this.label4);
             this.panel8.Controls.Add(this.label13);
             this.panel8.Controls.Add(this.label11);
-            this.panel8.Controls.Add(this.cmb_password);
+            this.panel8.Controls.Add(this.txt_password);
             this.panel8.Location = new System.Drawing.Point(1087, 513);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(457, 225);
@@ -486,13 +516,13 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Estado:";
             // 
-            // cmb_password
+            // txt_password
             // 
-            this.cmb_password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_password.Location = new System.Drawing.Point(229, 163);
-            this.cmb_password.Name = "cmb_password";
-            this.cmb_password.Size = new System.Drawing.Size(216, 34);
-            this.cmb_password.TabIndex = 25;
+            this.txt_password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Location = new System.Drawing.Point(229, 163);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(216, 34);
+            this.txt_password.TabIndex = 25;
             // 
             // txt_buscar
             // 
@@ -545,36 +575,6 @@
             this.pcb_apoyo.TabIndex = 6;
             this.pcb_apoyo.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_grupo;
-            this.pictureBox1.Location = new System.Drawing.Point(855, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmTrabajdoresMODIFICAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -601,8 +601,11 @@
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_tabla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajdores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -612,9 +615,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnModificar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_apoyo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -634,7 +634,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pcb_apoyo;
         private System.Windows.Forms.Panel pnl_tabla;
-        private System.Windows.Forms.DataGridView dgv_trabajdores;
+        private System.Windows.Forms.DataGridView dgv_trabajadores;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
@@ -655,14 +655,14 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txt_colonia;
-        private System.Windows.Forms.TextBox cmb_correo;
+        private System.Windows.Forms.TextBox txt_correo;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox cmb_telefono;
+        private System.Windows.Forms.TextBox txt_telefono;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cmb_estado;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox cmb_password;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.ComboBox cmb_puesto;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox btn_limpiar;
