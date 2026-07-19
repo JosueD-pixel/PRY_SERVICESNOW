@@ -81,6 +81,7 @@
     <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_login.cs" />
     <Compile Include="cls_menu.cs" />
+    <Compile Include="cls_servicios.cs" />
     <Compile Include="frmTrabajadoresAGREGAR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +112,12 @@
     <Compile Include="frm_menuprincipal.Designer.cs">
       <DependentUpon>frm_menuprincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_servicios.Designer.cs">
+      <DependentUpon>frm_servicios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmTrabajadoresAGREGAR.resx">
@@ -127,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menuprincipal.resx">
       <DependentUpon>frm_menuprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_servicios.resx">
+      <DependentUpon>frm_servicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -238,6 +248,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img_apoyo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servicios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_servicios.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

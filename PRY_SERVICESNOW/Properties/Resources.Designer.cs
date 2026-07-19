@@ -203,6 +203,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_servicios {
+            get {
+                object obj = ResourceManager.GetObject("icon_servicios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_Cerrar {
             get {
                 object obj = ResourceManager.GetObject("icono_Cerrar", resourceCulture);
@@ -346,6 +356,16 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap img_trabajadores {
             get {
                 object obj = ResourceManager.GetObject("img_trabajadores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap servicios {
+            get {
+                object obj = ResourceManager.GetObject("servicios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
