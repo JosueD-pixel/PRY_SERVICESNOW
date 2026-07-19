@@ -189,6 +189,7 @@
             this.btn_Mobiliario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Mobiliario.TabIndex = 7;
             this.btn_Mobiliario.TabStop = false;
+            this.btn_Mobiliario.Click += new System.EventHandler(this.btn_Mobiliario_Click);
             // 
             // btn_Servicios
             // 
