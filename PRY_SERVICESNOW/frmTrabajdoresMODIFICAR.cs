@@ -92,8 +92,32 @@ namespace PRY_SERVICESNOW
 
 
         }
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            txt_buscar.Clear();
+            txt_clave.Clear();
+            txt_nombre.Clear();
+            txt_apellidoP.Clear();
+            txt_apellidoM.Clear();
+            txt_telefono.Clear();
+            txt_correo.Clear();
+            txt_cp.Clear();
+            txt_calle.Clear();
+            txt_colonia.Clear();
+            txt_password.Clear();
 
-        private void pcb_apoyo_Click(object sender, EventArgs e)
+            cmb_estado.SelectedIndex = -1;
+            cmb_puesto.SelectedIndex = -1;
+        }
+
+        private void CargarTabla()
+        {
+            clsTrabajadores trabajador = new clsTrabajadores();
+            dgv_trabajadores.DataSource = trabajador.CargarDataGrid();
+        }
+
+
+        private void btnModificar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -126,33 +150,9 @@ namespace PRY_SERVICESNOW
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-
-        }
-        private void btn_limpiar_Click(object sender, EventArgs e)
-        {
-            txt_buscar.Clear();
-            txt_clave.Clear();
-            txt_nombre.Clear();
-            txt_apellidoP.Clear();
-            txt_apellidoM.Clear();
-            txt_telefono.Clear();
-            txt_correo.Clear();
-            txt_cp.Clear();
-            txt_calle.Clear();
-            txt_colonia.Clear();
-            txt_password.Clear();
-
-            cmb_estado.SelectedIndex = -1;
-            cmb_puesto.SelectedIndex = -1;
         }
 
-        private void CargarTabla()
-        {
-            clsTrabajadores trabajador = new clsTrabajadores();
-            dgv_trabajadores.DataSource = trabajador.CargarDataGrid();
-        }
-
-        private void dgv_trabajdores_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgv_trabajadores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
 
@@ -167,18 +167,10 @@ namespace PRY_SERVICESNOW
             txt_cp.Text = fila.Cells["CP"].Value.ToString();
             txt_calle.Text = fila.Cells["Calle"].Value.ToString();
             txt_colonia.Text = fila.Cells["Colonia"].Value.ToString();
-
-            // Estado (0 = Inactivo, 1 = Activo)
-
-            cmb_estado.SelectedIndex = Convert.ToInt32(fila.Cells["Estado"].Value);
-
-            // Puesto
-            cmb_puesto.SelectedValue = Convert.ToInt32(fila.Cells["IdPuesto"].Value);
-
-            // Contraseña
             txt_password.Text = fila.Cells["Password"].Value.ToString();
 
+            cmb_estado.SelectedIndex = Convert.ToInt32(fila.Cells["Estado"].Value);
+            cmb_puesto.SelectedValue = Convert.ToInt32(fila.Cells["IdPuesto"].Value);
         }
-
     }
 }
