@@ -112,6 +112,12 @@
     <Compile Include="frm_menuprincipal.Designer.cs">
       <DependentUpon>frm_menuprincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_mobiliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mobiliario.Designer.cs">
+      <DependentUpon>frm_mobiliario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_menuprincipal.resx">
       <DependentUpon>frm_menuprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mobiliario.resx">
+      <DependentUpon>frm_mobiliario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_servicios.resx">
       <DependentUpon>frm_servicios.cs</DependentUpon>
@@ -254,6 +263,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_servicios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_mobiliario.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

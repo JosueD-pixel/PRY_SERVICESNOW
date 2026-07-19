@@ -127,8 +127,8 @@
   <data name="icono_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_consultas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_consultas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +142,8 @@
   <data name="img_reservas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_reservas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_salas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_salas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,6 +160,9 @@
   <data name="icn_mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icn_mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton_consultas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_consultas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icn_grupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icn_grupo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="boton_mobilario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_mobilario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_selection_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_selection_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,9 +193,6 @@
   <data name="boton_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="img_apoyo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_apoyo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,8 +202,8 @@
   <data name="img_elisesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_elisesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_selection_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_selection_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icono_Cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icono_Cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +211,7 @@
   <data name="img_apoyo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_apoyo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_mobiliario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_mobiliario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
