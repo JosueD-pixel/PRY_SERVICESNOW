@@ -37,7 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_tabla = new System.Windows.Forms.Panel();
-            this.dgv_trabajadores = new System.Windows.Forms.DataGridView();
+            this.dgv_trabajdores = new System.Windows.Forms.DataGridView();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
@@ -47,7 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_tabla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajdores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -56,9 +56,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 882);
+            this.panel1.Location = new System.Drawing.Point(0, 618);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1596, 27);
+            this.panel1.Size = new System.Drawing.Size(1040, 22);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -66,17 +67,19 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(31, 882);
+            this.panel2.Size = new System.Drawing.Size(23, 618);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1571, 0);
+            this.panel3.Location = new System.Drawing.Point(1021, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(25, 882);
+            this.panel3.Size = new System.Drawing.Size(19, 618);
             this.panel3.TabIndex = 1;
             // 
             // pnl_superior
@@ -87,17 +90,19 @@
             this.pnl_superior.Controls.Add(this.pictureBox1);
             this.pnl_superior.Controls.Add(this.label1);
             this.pnl_superior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_superior.Location = new System.Drawing.Point(31, 0);
+            this.pnl_superior.Location = new System.Drawing.Point(23, 0);
+            this.pnl_superior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_superior.Name = "pnl_superior";
-            this.pnl_superior.Size = new System.Drawing.Size(1540, 60);
+            this.pnl_superior.Size = new System.Drawing.Size(998, 49);
             this.pnl_superior.TabIndex = 2;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox4.Location = new System.Drawing.Point(1465, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(1099, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(52, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
@@ -105,9 +110,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(52, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -115,9 +121,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_grupo;
-            this.pictureBox1.Location = new System.Drawing.Point(855, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(641, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(52, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -127,47 +134,54 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(617, 9);
+            this.label1.Location = new System.Drawing.Point(463, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 38);
+            this.label1.Size = new System.Drawing.Size(180, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "TRABAJADORES";
             // 
             // pnl_tabla
             // 
             this.pnl_tabla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.pnl_tabla.Controls.Add(this.dgv_trabajadores);
-            this.pnl_tabla.Location = new System.Drawing.Point(47, 149);
+            this.pnl_tabla.Controls.Add(this.dgv_trabajdores);
+            this.pnl_tabla.Location = new System.Drawing.Point(35, 121);
+            this.pnl_tabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl_tabla.Name = "pnl_tabla";
-            this.pnl_tabla.Size = new System.Drawing.Size(1492, 636);
+            this.pnl_tabla.Size = new System.Drawing.Size(1119, 517);
             this.pnl_tabla.TabIndex = 6;
             // 
-            // dgv_trabajadores
+            // dgv_trabajdores
             // 
-            this.dgv_trabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_trabajadores.Location = new System.Drawing.Point(40, 19);
-            this.dgv_trabajadores.Name = "dgv_trabajadores";
-            this.dgv_trabajadores.RowHeadersWidth = 51;
-            this.dgv_trabajadores.RowTemplate.Height = 24;
-            this.dgv_trabajadores.Size = new System.Drawing.Size(1416, 573);
-            this.dgv_trabajadores.TabIndex = 0;
+            this.dgv_trabajdores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_trabajdores.Location = new System.Drawing.Point(30, 15);
+            this.dgv_trabajdores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_trabajdores.Name = "dgv_trabajdores";
+            this.dgv_trabajdores.RowHeadersWidth = 51;
+            this.dgv_trabajdores.RowTemplate.Height = 24;
+            this.dgv_trabajdores.Size = new System.Drawing.Size(1062, 466);
+            this.dgv_trabajdores.TabIndex = 0;
+            this.dgv_trabajdores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_trabajdores_CellClick);
             // 
             // txt_buscar
             // 
             this.txt_buscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscar.Location = new System.Drawing.Point(1298, 104);
+            this.txt_buscar.Location = new System.Drawing.Point(974, 84);
+            this.txt_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(238, 34);
+            this.txt_buscar.Size = new System.Drawing.Size(180, 29);
             this.txt_buscar.TabIndex = 14;
+            this.txt_buscar.TabIndexChanged += new System.EventHandler(this.txt_buscar_TabIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label4.Location = new System.Drawing.Point(1083, 107);
+            this.label4.Location = new System.Drawing.Point(812, 87);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 28);
+            this.label4.Size = new System.Drawing.Size(149, 21);
             this.label4.TabIndex = 13;
             this.label4.Text = "Buscar trabajador:";
             // 
@@ -175,9 +189,10 @@
             // 
             this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.btn_eliminar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_eliminar;
-            this.btn_eliminar.Location = new System.Drawing.Point(1340, 791);
+            this.btn_eliminar.Location = new System.Drawing.Point(1005, 643);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(196, 85);
+            this.btn_eliminar.Size = new System.Drawing.Size(147, 69);
             this.btn_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_eliminar.TabIndex = 15;
             this.btn_eliminar.TabStop = false;
@@ -185,19 +200,21 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_apoyo2;
-            this.pictureBox3.Location = new System.Drawing.Point(37, 66);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 54);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(550, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(412, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // frmTrabajadoresELIMINAR
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
-            this.ClientSize = new System.Drawing.Size(1596, 909);
+            this.ClientSize = new System.Drawing.Size(1040, 640);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.label4);
@@ -208,15 +225,17 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmTrabajadoresELIMINAR";
             this.Text = "frmTrabajadoresELIMINAR";
+            this.Load += new System.EventHandler(this.frmTrabajadoresELIMINAR_Load);
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_tabla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajdores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
@@ -239,6 +258,6 @@
         private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox btn_eliminar;
-        private System.Windows.Forms.DataGridView dgv_trabajadores;
+        private System.Windows.Forms.DataGridView dgv_trabajdores;
     }
 }
