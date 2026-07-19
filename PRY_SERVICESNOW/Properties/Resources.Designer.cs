@@ -203,6 +203,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_mobiliario {
+            get {
+                object obj = ResourceManager.GetObject("icon_mobiliario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_servicios {
             get {
                 object obj = ResourceManager.GetObject("icon_servicios", resourceCulture);
