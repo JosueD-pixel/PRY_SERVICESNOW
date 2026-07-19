@@ -16,5 +16,99 @@ namespace PRY_SERVICESNOW
         {
             InitializeComponent();
         }
+
+        private void CargarTabla()
+        {
+            clsTrabajadores trabajador = new clsTrabajadores();
+            dgv_trabajadores.DataSource = trabajador.CargarDataGrid();
+        }
+
+        private void frmTrabajadoresELIMINAR_Load(object sender, EventArgs e)
+        {
+            CargarTabla();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txt_buscar.Text))
+                {
+                    MessageBox.Show("Seleccione un trabajador para eliminar.", "Advertencia",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DialogResult respuesta = MessageBox.Show(
+                    "¿Está seguro de eliminar este trabajador?",
+                    "Confirmar eliminación",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (respuesta != DialogResult.Yes)
+                    return;
+
+                clsTrabajadores trabajador = new clsTrabajadores();
+                trabajador.Clave_trabajador = txt_buscar.Text.Trim();
+
+                string mensaje = trabajador.Eliminar();
+
+                MessageBox.Show(mensaje, "Trabajadores", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                CargarTabla();
+                txt_buscar.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void dgv_trabajdores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txt_buscar.Text))
+                {
+                    MessageBox.Show("Seleccione un trabajador para eliminar.", "Advertencia",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DialogResult respuesta = MessageBox.Show(
+                    "¿Está seguro de eliminar este trabajador?",
+                    "Confirmar eliminación",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (respuesta != DialogResult.Yes)
+                    return;
+
+                clsTrabajadores trabajador = new clsTrabajadores();
+                trabajador.Clave_trabajador = txt_buscar.Text.Trim();
+
+                string mensaje = trabajador.Eliminar();
+
+                MessageBox.Show(mensaje, "Trabajadores", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                CargarTabla();
+                txt_buscar.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void txt_buscar_TabIndexChanged(object sender, EventArgs e)
+        {
+            clsTrabajadores trabajador = new clsTrabajadores();
+            dgv_trabajadores.DataSource = trabajador.Consultar(txt_buscar.Text.Trim());
+
+        }
     }
 }
