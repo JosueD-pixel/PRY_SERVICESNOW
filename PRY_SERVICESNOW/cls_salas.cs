@@ -11,7 +11,7 @@ namespace PRY_SERVICESNOW
 {
     internal class cls_salas
     {
-       
+            //MEJORANDO LA BASE DE DATOS OS IS SISISISIISISISI
             // ============================
             // CAMPOS PRIVADOS
             // ============================
