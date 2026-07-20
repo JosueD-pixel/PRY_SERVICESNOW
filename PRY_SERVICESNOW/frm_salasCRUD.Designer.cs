@@ -32,6 +32,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_buscarSala = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pnl_superior = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_limpiar = new System.Windows.Forms.PictureBox();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
@@ -54,14 +63,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgv_salas = new System.Windows.Forms.DataGridView();
-            this.txt_buscarSala = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pnl_superior = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnl_superior.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
@@ -69,10 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_capacidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_salas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pnl_superior.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,6 +95,99 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1534, 26);
             this.panel2.TabIndex = 22;
+            // 
+            // txt_buscarSala
+            // 
+            this.txt_buscarSala.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscarSala.Location = new System.Drawing.Point(1294, 453);
+            this.txt_buscarSala.Name = "txt_buscarSala";
+            this.txt_buscarSala.Size = new System.Drawing.Size(238, 34);
+            this.txt_buscarSala.TabIndex = 26;
+            this.txt_buscarSala.TextChanged += new System.EventHandler(this.txt_buscarSala_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.label5.Location = new System.Drawing.Point(1117, 462);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 28);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Buscar servicio";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(679, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SALAS";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_salones;
+            this.pictureBox1.Location = new System.Drawing.Point(789, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pnl_superior
+            // 
+            this.pnl_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.pnl_superior.Controls.Add(this.pictureBox3);
+            this.pnl_superior.Controls.Add(this.pictureBox2);
+            this.pnl_superior.Controls.Add(this.pictureBox1);
+            this.pnl_superior.Controls.Add(this.label1);
+            this.pnl_superior.Location = new System.Drawing.Point(0, 0);
+            this.pnl_superior.Name = "pnl_superior";
+            this.pnl_superior.Size = new System.Drawing.Size(1596, 60);
+            this.pnl_superior.TabIndex = 2;
+            this.pnl_superior.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_superior_Paint);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(31, 909);
+            this.panel4.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(191, 95);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(328, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -118,12 +212,11 @@
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(76, 163);
+            this.panel3.Location = new System.Drawing.Point(76, 147);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1456, 274);
-            this.panel3.TabIndex = 23;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.TabIndex = 28;
             // 
             // btn_limpiar
             // 
@@ -136,7 +229,6 @@
             this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_limpiar.TabIndex = 27;
             this.btn_limpiar.TabStop = false;
-            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // btn_eliminar
             // 
@@ -149,7 +241,6 @@
             this.btn_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_eliminar.TabIndex = 25;
             this.btn_eliminar.TabStop = false;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_modificar
             // 
@@ -162,7 +253,6 @@
             this.btn_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_modificar.TabIndex = 26;
             this.btn_modificar.TabStop = false;
-            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_guardar
             // 
@@ -175,7 +265,6 @@
             this.btn_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_guardar.TabIndex = 24;
             this.btn_guardar.TabStop = false;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // nud_capacidad
             // 
@@ -378,7 +467,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_salas.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_salas.EnableHeadersVisualStyles = false;
-            this.dgv_salas.Location = new System.Drawing.Point(76, 493);
+            this.dgv_salas.Location = new System.Drawing.Point(76, 508);
             this.dgv_salas.MultiSelect = false;
             this.dgv_salas.Name = "dgv_salas";
             this.dgv_salas.ReadOnly = true;
@@ -386,92 +475,8 @@
             this.dgv_salas.RowHeadersWidth = 51;
             this.dgv_salas.RowTemplate.Height = 24;
             this.dgv_salas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_salas.Size = new System.Drawing.Size(1456, 357);
-            this.dgv_salas.TabIndex = 24;
-            // 
-            // txt_buscarSala
-            // 
-            this.txt_buscarSala.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscarSala.Location = new System.Drawing.Point(1294, 453);
-            this.txt_buscarSala.Name = "txt_buscarSala";
-            this.txt_buscarSala.Size = new System.Drawing.Size(238, 34);
-            this.txt_buscarSala.TabIndex = 26;
-            this.txt_buscarSala.TextChanged += new System.EventHandler(this.txt_buscarSala_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label5.Location = new System.Drawing.Point(1117, 462);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 28);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Buscar servicio";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(679, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 38);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SALAS";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_salones;
-            this.pictureBox1.Location = new System.Drawing.Point(789, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pnl_superior
-            // 
-            this.pnl_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.pnl_superior.Controls.Add(this.pictureBox3);
-            this.pnl_superior.Controls.Add(this.pictureBox2);
-            this.pnl_superior.Controls.Add(this.pictureBox1);
-            this.pnl_superior.Controls.Add(this.label1);
-            this.pnl_superior.Location = new System.Drawing.Point(0, 0);
-            this.pnl_superior.Name = "pnl_superior";
-            this.pnl_superior.Size = new System.Drawing.Size(1596, 60);
-            this.pnl_superior.TabIndex = 2;
-            this.pnl_superior.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_superior_Paint);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(31, 909);
-            this.panel4.TabIndex = 20;
+            this.dgv_salas.Size = new System.Drawing.Size(1456, 288);
+            this.dgv_salas.TabIndex = 29;
             // 
             // frm_salasCRUD
             // 
@@ -479,10 +484,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1596, 909);
-            this.Controls.Add(this.txt_buscarSala);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.dgv_salas);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_buscarSala);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnl_superior);
             this.Controls.Add(this.panel4);
@@ -491,6 +497,11 @@
             this.Name = "frm_salasCRUD";
             this.Text = "frm_salasCRUD";
             this.Load += new System.EventHandler(this.frm_salasCRUD_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnl_superior.ResumeLayout(false);
+            this.pnl_superior.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
@@ -499,11 +510,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_capacidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_salas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.pnl_superior.ResumeLayout(false);
-            this.pnl_superior.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,7 +518,26 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txt_buscarSala;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel pnl_superior;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox btn_limpiar;
+        private System.Windows.Forms.PictureBox btn_eliminar;
+        private System.Windows.Forms.PictureBox btn_modificar;
+        private System.Windows.Forms.PictureBox btn_guardar;
+        private System.Windows.Forms.NumericUpDown nud_capacidad;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmb_ubicacion;
+        private System.Windows.Forms.RadioButton rdb_inactivo;
+        private System.Windows.Forms.RadioButton rdb_activo;
+        private System.Windows.Forms.ComboBox cmb_tiposala;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.TextBox txt_idsala;
@@ -523,24 +548,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cmb_tiposala;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmb_ubicacion;
-        private System.Windows.Forms.RadioButton rdb_inactivo;
-        private System.Windows.Forms.RadioButton rdb_activo;
-        private System.Windows.Forms.NumericUpDown nud_capacidad;
-        private System.Windows.Forms.PictureBox btn_eliminar;
-        private System.Windows.Forms.PictureBox btn_modificar;
-        private System.Windows.Forms.PictureBox btn_guardar;
         private System.Windows.Forms.DataGridView dgv_salas;
-        private System.Windows.Forms.TextBox txt_buscarSala;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox btn_limpiar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel pnl_superior;
-        private System.Windows.Forms.Panel panel4;
     }
 }
