@@ -170,7 +170,7 @@ namespace PRY_SERVICESNOW
         private void btn_salaAgregar_Click(object sender, EventArgs e)
         {
             menu = new cls_menu();
-            menu.AgregarAlContenedor(new frm_salasCRUD(), pnl_formulario);
+            menu.AgregarAlContenedor(new frm_salasCRUDd(), pnl_formulario);
         }
     }
 }

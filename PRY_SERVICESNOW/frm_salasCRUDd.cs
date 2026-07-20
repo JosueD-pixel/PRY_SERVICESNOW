@@ -103,7 +103,7 @@ namespace PRY_SERVICESNOW
                 if (respuesta != DialogResult.Yes)
                     return;
 
-
+                sala.Id_sala = id_sala;
                 sala.Nombre = txt_nombre.Text;
                 sala.Descripcion = txt_descripcion.Text;
                 sala.Ubicacion = cmb_ubicacion.Text;
@@ -205,17 +205,7 @@ namespace PRY_SERVICESNOW
 
         private void txt_buscarServicio_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                string texto = txt_buscarSala.Text.Trim();
-                dgv_salas.DataSource = sala.Buscar(texto);
-                dgv_salas.ClearSelection();
-                dgv_salas.CurrentCell = null;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al buscar sala:\n" + ex.Message);
-            }
+
         }
 
         private void txt_buscarSala_TextChanged(object sender, EventArgs e)
@@ -226,15 +216,11 @@ namespace PRY_SERVICESNOW
             dgv_salas.CurrentCell = null;
         }
 
-
-
-
-
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
             id_sala = 0;
 
-            sala.LimpiarPanel(panel3);
+            sala.LimpiarPanel(pnl_datosSala);
 
             dgv_salas.ClearSelection();
             dgv_salas.CurrentCell = null;
