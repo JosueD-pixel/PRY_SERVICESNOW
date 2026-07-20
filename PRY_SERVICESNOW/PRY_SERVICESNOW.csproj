@@ -84,6 +84,7 @@
     <Compile Include="cls_menu.cs" />
     <Compile Include="cls_Mobiliario.cs" />
     <Compile Include="cls_puestos.cs" />
+    <Compile Include="cls_salas.cs" />
     <Compile Include="cls_servicios.cs" />
     <Compile Include="frmTrabajadoresAGREGAR.cs">
       <SubType>Form</SubType>
@@ -121,6 +122,12 @@
     <Compile Include="frm_mobiliario.Designer.cs">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_salasCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_salasCRUD.Designer.cs">
+      <DependentUpon>frm_salasCRUD.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mobiliario.resx">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_salasCRUD.resx">
+      <DependentUpon>frm_salasCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_servicios.resx">
       <DependentUpon>frm_servicios.cs</DependentUpon>
@@ -269,6 +279,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_mobiliario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_mobiliario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_servicios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn_salones.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
