@@ -51,8 +51,8 @@
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
             this.btn_guardar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pnl_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -328,16 +328,6 @@
             this.panel2.Size = new System.Drawing.Size(31, 802);
             this.panel2.TabIndex = 18;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1547, 60);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(31, 802);
-            this.panel3.TabIndex = 19;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
@@ -347,6 +337,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(31, 802);
             this.panel4.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1547, 60);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(31, 802);
+            this.panel3.TabIndex = 19;
             // 
             // panel5
             // 
@@ -362,6 +362,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1578, 862);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -371,6 +372,7 @@
             this.Controls.Add(this.pnl_superior);
             this.Name = "frm_servicios";
             this.Text = "frm_servicios";
+            this.Load += new System.EventHandler(this.frm_horarios_Load);
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

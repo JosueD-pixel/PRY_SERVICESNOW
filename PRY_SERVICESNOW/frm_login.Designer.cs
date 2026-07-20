@@ -100,6 +100,7 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(213, 31);
             this.txt_password.TabIndex = 5;
+            this.txt_password.UseSystemPasswordChar = true;
             // 
             // btn_ingresar
             // 

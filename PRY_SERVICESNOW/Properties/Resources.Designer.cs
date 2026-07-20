@@ -163,9 +163,29 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_mobiliario {
+            get {
+                object obj = ResourceManager.GetObject("btn_mobiliario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_selection_ingresar {
             get {
                 object obj = ResourceManager.GetObject("btn_selection_ingresar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_servicios {
+            get {
+                object obj = ResourceManager.GetObject("btn_servicios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +206,16 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap icn_mini {
             get {
                 object obj = ResourceManager.GetObject("icn_mini", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icn_salones {
+            get {
+                object obj = ResourceManager.GetObject("icn_salones", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

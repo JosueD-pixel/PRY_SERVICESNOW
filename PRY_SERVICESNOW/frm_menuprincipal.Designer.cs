@@ -56,9 +56,8 @@
             this.btn_trabajadoresAgregar = new System.Windows.Forms.PictureBox();
             this.btn_trabajadores = new System.Windows.Forms.PictureBox();
             this.pnl_salas = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_salasModificar = new System.Windows.Forms.PictureBox();
-            this.btn_salasEliminar = new System.Windows.Forms.PictureBox();
+            this.btn_salaServicios = new System.Windows.Forms.PictureBox();
+            this.btn_salasMobiliario = new System.Windows.Forms.PictureBox();
             this.btn_salaAgregar = new System.Windows.Forms.PictureBox();
             this.btn_salas = new System.Windows.Forms.PictureBox();
             this.pnl_formulario = new System.Windows.Forms.Panel();
@@ -86,9 +85,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_trabajadoresAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_trabajadores)).BeginInit();
             this.pnl_salas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_salasModificar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_salasEliminar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_salaServicios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_salasMobiliario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salaAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salas)).BeginInit();
             this.SuspendLayout();
@@ -390,9 +388,8 @@
             // 
             // pnl_salas
             // 
-            this.pnl_salas.Controls.Add(this.pictureBox1);
-            this.pnl_salas.Controls.Add(this.btn_salasModificar);
-            this.pnl_salas.Controls.Add(this.btn_salasEliminar);
+            this.pnl_salas.Controls.Add(this.btn_salaServicios);
+            this.pnl_salas.Controls.Add(this.btn_salasMobiliario);
             this.pnl_salas.Controls.Add(this.btn_salaAgregar);
             this.pnl_salas.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_salas.Location = new System.Drawing.Point(0, 50);
@@ -400,45 +397,36 @@
             this.pnl_salas.Size = new System.Drawing.Size(250, 181);
             this.pnl_salas.TabIndex = 1;
             // 
-            // pictureBox1
+            // btn_salaServicios
             // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_consultas;
-            this.pictureBox1.Location = new System.Drawing.Point(101, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.btn_salaServicios.Image = global::PRY_SERVICESNOW.Properties.Resources.btn_servicios;
+            this.btn_salaServicios.Location = new System.Drawing.Point(101, 90);
+            this.btn_salaServicios.Name = "btn_salaServicios";
+            this.btn_salaServicios.Size = new System.Drawing.Size(149, 39);
+            this.btn_salaServicios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_salaServicios.TabIndex = 4;
+            this.btn_salaServicios.TabStop = false;
             // 
-            // btn_salasModificar
+            // btn_salasMobiliario
             // 
-            this.btn_salasModificar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_modificar;
-            this.btn_salasModificar.Location = new System.Drawing.Point(101, 136);
-            this.btn_salasModificar.Name = "btn_salasModificar";
-            this.btn_salasModificar.Size = new System.Drawing.Size(149, 39);
-            this.btn_salasModificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_salasModificar.TabIndex = 4;
-            this.btn_salasModificar.TabStop = false;
-            // 
-            // btn_salasEliminar
-            // 
-            this.btn_salasEliminar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_eliminar;
-            this.btn_salasEliminar.Location = new System.Drawing.Point(101, 91);
-            this.btn_salasEliminar.Name = "btn_salasEliminar";
-            this.btn_salasEliminar.Size = new System.Drawing.Size(149, 39);
-            this.btn_salasEliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_salasEliminar.TabIndex = 3;
-            this.btn_salasEliminar.TabStop = false;
+            this.btn_salasMobiliario.Image = global::PRY_SERVICESNOW.Properties.Resources.btn_mobiliario;
+            this.btn_salasMobiliario.Location = new System.Drawing.Point(101, 45);
+            this.btn_salasMobiliario.Name = "btn_salasMobiliario";
+            this.btn_salasMobiliario.Size = new System.Drawing.Size(149, 39);
+            this.btn_salasMobiliario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_salasMobiliario.TabIndex = 3;
+            this.btn_salasMobiliario.TabStop = false;
             // 
             // btn_salaAgregar
             // 
             this.btn_salaAgregar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_agregar;
-            this.btn_salaAgregar.Location = new System.Drawing.Point(101, 46);
+            this.btn_salaAgregar.Location = new System.Drawing.Point(101, 0);
             this.btn_salaAgregar.Name = "btn_salaAgregar";
             this.btn_salaAgregar.Size = new System.Drawing.Size(149, 39);
             this.btn_salaAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_salaAgregar.TabIndex = 2;
             this.btn_salaAgregar.TabStop = false;
+            this.btn_salaAgregar.Click += new System.EventHandler(this.btn_salaAgregar_Click);
             // 
             // btn_salas
             // 
@@ -499,9 +487,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_trabajadoresAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_trabajadores)).EndInit();
             this.pnl_salas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_salasModificar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_salasEliminar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_salaServicios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_salasMobiliario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salaAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salas)).EndInit();
             this.ResumeLayout(false);
@@ -516,15 +503,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_salas;
         private System.Windows.Forms.Panel pnl_salas;
-        private System.Windows.Forms.PictureBox btn_salasModificar;
-        private System.Windows.Forms.PictureBox btn_salasEliminar;
+        private System.Windows.Forms.PictureBox btn_salaServicios;
+        private System.Windows.Forms.PictureBox btn_salasMobiliario;
         private System.Windows.Forms.PictureBox btn_salaAgregar;
         private System.Windows.Forms.PictureBox btn_trabajadores;
         private System.Windows.Forms.Panel pnl_trabajadores;
         private System.Windows.Forms.PictureBox btn_trabajadoresModificar;
         private System.Windows.Forms.PictureBox btn_trabajadoresEliminar;
         private System.Windows.Forms.PictureBox btn_trabajadoresAgregar;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btn_trabajadoresBuscar;
         private System.Windows.Forms.PictureBox btn_reservas;
         private System.Windows.Forms.Panel pnl_reservas;

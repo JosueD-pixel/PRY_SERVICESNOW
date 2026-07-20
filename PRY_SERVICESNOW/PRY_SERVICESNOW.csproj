@@ -84,6 +84,7 @@
     <Compile Include="cls_menu.cs" />
     <Compile Include="cls_Mobiliario.cs" />
     <Compile Include="cls_puestos.cs" />
+    <Compile Include="cls_salas.cs" />
     <Compile Include="cls_servicios.cs" />
     <Compile Include="frmTrabajadoresAGREGAR.cs">
       <SubType>Form</SubType>
