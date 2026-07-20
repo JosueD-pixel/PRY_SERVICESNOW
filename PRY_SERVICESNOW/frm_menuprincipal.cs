@@ -38,8 +38,8 @@ namespace PRY_SERVICESNOW
                 btn_Mobiliario,
                 btn_Servicios,
                 btn_salaAgregar,
-                btn_salasModificar,
-                btn_salasEliminar,
+                btn_salasMobiliario,
+                btn_salaServicios,
                 btn_agregarReserva,
                 btn_modificarReservas,
                 btn_eliminarReservas
@@ -165,6 +165,12 @@ namespace PRY_SERVICESNOW
         {
             menu = new cls_menu();
             menu.AgregarAlContenedor(new frm_mobiliario(), pnl_formulario);
+        }
+
+        private void btn_salaAgregar_Click(object sender, EventArgs e)
+        {
+            menu = new cls_menu();
+            menu.AgregarAlContenedor(new frm_salasCRUD(), pnl_formulario);
         }
     }
 }

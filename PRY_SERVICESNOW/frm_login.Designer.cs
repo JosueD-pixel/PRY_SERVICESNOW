@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_login));
             this.pnl_superior = new System.Windows.Forms.Panel();
+            this.btn_minimizar = new System.Windows.Forms.PictureBox();
+            this.btn_salir = new System.Windows.Forms.PictureBox();
             this.txt_clave = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.btn_ingresar = new System.Windows.Forms.PictureBox();
             this.pcb_login = new System.Windows.Forms.PictureBox();
             this.pbc_fondo = new System.Windows.Forms.PictureBox();
             this.pbc_hoja = new System.Windows.Forms.PictureBox();
-            this.btn_minimizar = new System.Windows.Forms.PictureBox();
-            this.btn_salir = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ingresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_login)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbc_fondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbc_hoja)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
@@ -58,6 +58,32 @@
             this.pnl_superior.Size = new System.Drawing.Size(1011, 30);
             this.pnl_superior.TabIndex = 0;
             this.pnl_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_superior_MouseDown);
+            // 
+            // btn_minimizar
+            // 
+            this.btn_minimizar.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_mini;
+            this.btn_minimizar.Location = new System.Drawing.Point(932, 1);
+            this.btn_minimizar.Name = "btn_minimizar";
+            this.btn_minimizar.Size = new System.Drawing.Size(35, 29);
+            this.btn_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_minimizar.TabIndex = 5;
+            this.btn_minimizar.TabStop = false;
+            this.btn_minimizar.Click += new System.EventHandler(this.btn_minimizar_Click);
+            this.btn_minimizar.MouseEnter += new System.EventHandler(this.btn_minimizar_MouseEnter);
+            this.btn_minimizar.MouseLeave += new System.EventHandler(this.btn_minimizar_MouseLeave);
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.Image = global::PRY_SERVICESNOW.Properties.Resources.icono_Cerrar;
+            this.btn_salir.Location = new System.Drawing.Point(973, 1);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(35, 29);
+            this.btn_salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_salir.TabIndex = 4;
+            this.btn_salir.TabStop = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            this.btn_salir.MouseEnter += new System.EventHandler(this.btn_salir_MouseEnter);
+            this.btn_salir.MouseLeave += new System.EventHandler(this.btn_salir_MouseLeave);
             // 
             // txt_clave
             // 
@@ -74,6 +100,7 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(213, 31);
             this.txt_password.TabIndex = 5;
+            this.txt_password.UseSystemPasswordChar = true;
             // 
             // btn_ingresar
             // 
@@ -118,32 +145,6 @@
             this.pbc_hoja.TabIndex = 1;
             this.pbc_hoja.TabStop = false;
             // 
-            // btn_minimizar
-            // 
-            this.btn_minimizar.Image = global::PRY_SERVICESNOW.Properties.Resources.icn_mini;
-            this.btn_minimizar.Location = new System.Drawing.Point(932, 1);
-            this.btn_minimizar.Name = "btn_minimizar";
-            this.btn_minimizar.Size = new System.Drawing.Size(35, 29);
-            this.btn_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_minimizar.TabIndex = 5;
-            this.btn_minimizar.TabStop = false;
-            this.btn_minimizar.Click += new System.EventHandler(this.btn_minimizar_Click);
-            this.btn_minimizar.MouseEnter += new System.EventHandler(this.btn_minimizar_MouseEnter);
-            this.btn_minimizar.MouseLeave += new System.EventHandler(this.btn_minimizar_MouseLeave);
-            // 
-            // btn_salir
-            // 
-            this.btn_salir.Image = global::PRY_SERVICESNOW.Properties.Resources.icono_Cerrar;
-            this.btn_salir.Location = new System.Drawing.Point(973, 1);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(35, 29);
-            this.btn_salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_salir.TabIndex = 4;
-            this.btn_salir.TabStop = false;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            this.btn_salir.MouseEnter += new System.EventHandler(this.btn_salir_MouseEnter);
-            this.btn_salir.MouseLeave += new System.EventHandler(this.btn_salir_MouseLeave);
-            // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -162,12 +163,12 @@
             this.Name = "frm_login";
             this.Text = "Form1";
             this.pnl_superior.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ingresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_login)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbc_fondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbc_hoja)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

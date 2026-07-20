@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,19 +39,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_tabla = new System.Windows.Forms.Panel();
-            this.dgv_trabajadores = new System.Windows.Forms.DataGridView();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.dgv_trabajadores = new System.Windows.Forms.DataGridView();
             this.pnl_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_tabla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,18 +152,6 @@
             this.pnl_tabla.Size = new System.Drawing.Size(1492, 636);
             this.pnl_tabla.TabIndex = 6;
             // 
-            // dgv_trabajadores
-            // 
-            this.dgv_trabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_trabajadores.Location = new System.Drawing.Point(40, 18);
-            this.dgv_trabajadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgv_trabajadores.Name = "dgv_trabajadores";
-            this.dgv_trabajadores.RowHeadersWidth = 51;
-            this.dgv_trabajadores.RowTemplate.Height = 24;
-            this.dgv_trabajadores.Size = new System.Drawing.Size(1416, 574);
-            this.dgv_trabajadores.TabIndex = 0;
-            this.dgv_trabajadores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_trabajadores_CellClick);
-            // 
             // txt_buscar
             // 
             this.txt_buscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -207,6 +197,44 @@
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
+            // dgv_trabajadores
+            // 
+            this.dgv_trabajadores.AllowUserToAddRows = false;
+            this.dgv_trabajadores.AllowUserToDeleteRows = false;
+            this.dgv_trabajadores.AllowUserToResizeColumns = false;
+            this.dgv_trabajadores.AllowUserToResizeRows = false;
+            this.dgv_trabajadores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.dgv_trabajadores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_trabajadores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_trabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_trabajadores.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_trabajadores.EnableHeadersVisualStyles = false;
+            this.dgv_trabajadores.Location = new System.Drawing.Point(19, 20);
+            this.dgv_trabajadores.MultiSelect = false;
+            this.dgv_trabajadores.Name = "dgv_trabajadores";
+            this.dgv_trabajadores.ReadOnly = true;
+            this.dgv_trabajadores.RowHeadersVisible = false;
+            this.dgv_trabajadores.RowHeadersWidth = 51;
+            this.dgv_trabajadores.RowTemplate.Height = 24;
+            this.dgv_trabajadores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_trabajadores.Size = new System.Drawing.Size(1455, 583);
+            this.dgv_trabajadores.TabIndex = 5;
+            this.dgv_trabajadores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_trabajadores_CellClick);
+            // 
             // frmTrabajadoresELIMINAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,9 +261,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_tabla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_trabajadores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
