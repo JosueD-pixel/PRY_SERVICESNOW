@@ -31,9 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_superior = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_mobiliario = new System.Windows.Forms.Panel();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
@@ -42,7 +39,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_nombreMobiliario = new System.Windows.Forms.TextBox();
-            this.btn_limpiar = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_idMobiliario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,21 +47,25 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_buscarServicio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.dgv_mobiliario = new System.Windows.Forms.DataGridView();
             this.btn_modificar = new System.Windows.Forms.PictureBox();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
-            this.dgv_mobiliario = new System.Windows.Forms.DataGridView();
             this.btn_guardar = new System.Windows.Forms.PictureBox();
+            this.btn_limpiar = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
+            this.pnl_mobiliario.SuspendLayout();
+            this.pnl_mobil2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_mobiliario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
-            this.pnl_mobil2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
@@ -80,36 +80,6 @@
             this.pnl_superior.Name = "pnl_superior";
             this.pnl_superior.Size = new System.Drawing.Size(1578, 60);
             this.pnl_superior.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icon_mobiliario;
-            this.pictureBox1.Location = new System.Drawing.Point(807, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -194,22 +164,10 @@
             // txt_nombreMobiliario
             // 
             this.txt_nombreMobiliario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombreMobiliario.Location = new System.Drawing.Point(269, 165);
+            this.txt_nombreMobiliario.Location = new System.Drawing.Point(269, 168);
             this.txt_nombreMobiliario.Name = "txt_nombreMobiliario";
             this.txt_nombreMobiliario.Size = new System.Drawing.Size(238, 34);
             this.txt_nombreMobiliario.TabIndex = 16;
-            // 
-            // btn_limpiar
-            // 
-            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.btn_limpiar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_limpiar;
-            this.btn_limpiar.Location = new System.Drawing.Point(275, 566);
-            this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(194, 62);
-            this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_limpiar.TabIndex = 19;
-            this.btn_limpiar.TabStop = false;
-            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // label3
             // 
@@ -299,30 +257,6 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Buscar mobiliario";
             // 
-            // btn_modificar
-            // 
-            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.btn_modificar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_modificar;
-            this.btn_modificar.Location = new System.Drawing.Point(369, 566);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(194, 62);
-            this.btn_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_modificar.TabIndex = 21;
-            this.btn_modificar.TabStop = false;
-            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.btn_eliminar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_eliminar;
-            this.btn_eliminar.Location = new System.Drawing.Point(630, 566);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(194, 62);
-            this.btn_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_eliminar.TabIndex = 20;
-            this.btn_eliminar.TabStop = false;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
-            // 
             // dgv_mobiliario
             // 
             this.dgv_mobiliario.AllowUserToAddRows = false;
@@ -360,6 +294,28 @@
             this.dgv_mobiliario.Size = new System.Drawing.Size(825, 472);
             this.dgv_mobiliario.TabIndex = 3;
             // 
+            // btn_modificar
+            // 
+            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_modificar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_modificar;
+            this.btn_modificar.Location = new System.Drawing.Point(369, 566);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(194, 62);
+            this.btn_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_modificar.TabIndex = 21;
+            this.btn_modificar.TabStop = false;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_eliminar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_eliminar;
+            this.btn_eliminar.Location = new System.Drawing.Point(630, 566);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(194, 62);
+            this.btn_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_eliminar.TabIndex = 20;
+            this.btn_eliminar.TabStop = false;
+            // 
             // btn_guardar
             // 
             this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
@@ -372,11 +328,51 @@
             this.btn_guardar.TabStop = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_limpiar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_limpiar;
+            this.btn_limpiar.Location = new System.Drawing.Point(275, 566);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(194, 62);
+            this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_limpiar.TabIndex = 19;
+            this.btn_limpiar.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icon_mobiliario;
+            this.pictureBox1.Location = new System.Drawing.Point(807, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_mobiliario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1578, 844);
             this.Controls.Add(this.pnl_mobil2);
             this.Controls.Add(this.pnl_mobiliario);
@@ -385,18 +381,18 @@
             this.Text = "frm_mobiliario";
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
+            this.pnl_mobiliario.ResumeLayout(false);
+            this.pnl_mobiliario.PerformLayout();
+            this.pnl_mobil2.ResumeLayout(false);
+            this.pnl_mobil2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnl_mobiliario.ResumeLayout(false);
-            this.pnl_mobiliario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
-            this.pnl_mobil2.ResumeLayout(false);
-            this.pnl_mobil2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).EndInit();
             this.ResumeLayout(false);
 
         }

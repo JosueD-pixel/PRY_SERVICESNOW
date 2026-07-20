@@ -122,11 +122,11 @@
     <Compile Include="frm_mobiliario.Designer.cs">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_salasCRUD.cs">
+    <Compile Include="frm_reservas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_salasCRUD.Designer.cs">
-      <DependentUpon>frm_salasCRUD.cs</DependentUpon>
+    <Compile Include="frm_reservas.Designer.cs">
+      <DependentUpon>frm_reservas.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_servicios.cs">
       <SubType>Form</SubType>
@@ -154,8 +154,8 @@
     <EmbeddedResource Include="frm_mobiliario.resx">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_salasCRUD.resx">
-      <DependentUpon>frm_salasCRUD.cs</DependentUpon>
+    <EmbeddedResource Include="frm_reservas.resx">
+      <DependentUpon>frm_reservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_servicios.resx">
       <DependentUpon>frm_servicios.cs</DependentUpon>
@@ -281,13 +281,10 @@
     <None Include="Resources\icon_mobiliario.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_mobiliario.png" />
+    <None Include="Resources\icon_reservas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_servicios.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icn_salones.png" />
+    <None Include="Resources\img_cancelar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
