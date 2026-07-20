@@ -121,6 +121,12 @@
     <Compile Include="frm_mobiliario.Designer.cs">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_reservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reservas.Designer.cs">
+      <DependentUpon>frm_reservas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_servicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mobiliario.resx">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reservas.resx">
+      <DependentUpon>frm_reservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_servicios.resx">
       <DependentUpon>frm_servicios.cs</DependentUpon>
@@ -269,6 +278,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_mobiliario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_reservas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_cancelar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
