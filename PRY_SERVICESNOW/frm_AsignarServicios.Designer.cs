@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_superior = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -38,31 +38,31 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnl_sala = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmb_sala = new System.Windows.Forms.ComboBox();
+            this.btn_limpiar = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.cmb_sala = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.dgv_serviciosAsignados = new System.Windows.Forms.DataGridView();
             this.pnl_servicio = new System.Windows.Forms.Panel();
+            this.clb_servicios = new System.Windows.Forms.CheckedListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.clb_servicios = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_limpiar = new System.Windows.Forms.PictureBox();
+            this.txt_buscarSala = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
             this.btn_modificar = new System.Windows.Forms.PictureBox();
             this.btn_guardar = new System.Windows.Forms.PictureBox();
-            this.txt_buscarServicio = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.pnl_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_sala.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_serviciosAsignados)).BeginInit();
             this.pnl_servicio.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).BeginInit();
@@ -154,25 +154,17 @@
             this.pnl_sala.Size = new System.Drawing.Size(625, 407);
             this.pnl_sala.TabIndex = 23;
             // 
-            // label3
+            // btn_limpiar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label3.Location = new System.Drawing.Point(18, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(222, 38);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Datos de la sala";
-            // 
-            // cmb_sala
-            // 
-            this.cmb_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_sala.FormattingEnabled = true;
-            this.cmb_sala.Location = new System.Drawing.Point(25, 105);
-            this.cmb_sala.Name = "cmb_sala";
-            this.cmb_sala.Size = new System.Drawing.Size(454, 33);
-            this.cmb_sala.TabIndex = 29;
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_limpiar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_limpiar;
+            this.btn_limpiar.Location = new System.Drawing.Point(412, 330);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(194, 62);
+            this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_limpiar.TabIndex = 34;
+            this.btn_limpiar.TabStop = false;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // label5
             // 
@@ -185,6 +177,28 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Escoga una sala";
             // 
+            // cmb_sala
+            // 
+            this.cmb_sala.BackColor = System.Drawing.Color.White;
+            this.cmb_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.cmb_sala.FormattingEnabled = true;
+            this.cmb_sala.Location = new System.Drawing.Point(25, 105);
+            this.cmb_sala.Name = "cmb_sala";
+            this.cmb_sala.Size = new System.Drawing.Size(454, 33);
+            this.cmb_sala.TabIndex = 29;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.label3.Location = new System.Drawing.Point(18, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(222, 38);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Datos de la sala";
+            // 
             // dgv_serviciosAsignados
             // 
             this.dgv_serviciosAsignados.AllowUserToAddRows = false;
@@ -193,23 +207,23 @@
             this.dgv_serviciosAsignados.AllowUserToResizeRows = false;
             this.dgv_serviciosAsignados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
             this.dgv_serviciosAsignados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_serviciosAsignados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_serviciosAsignados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_serviciosAsignados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_serviciosAsignados.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_serviciosAsignados.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_serviciosAsignados.EnableHeadersVisualStyles = false;
             this.dgv_serviciosAsignados.Location = new System.Drawing.Point(230, 44);
             this.dgv_serviciosAsignados.MultiSelect = false;
@@ -233,6 +247,20 @@
             this.pnl_servicio.Size = new System.Drawing.Size(661, 306);
             this.pnl_servicio.TabIndex = 30;
             // 
+            // clb_servicios
+            // 
+            this.clb_servicios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.clb_servicios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.clb_servicios.CheckOnClick = true;
+            this.clb_servicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clb_servicios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.clb_servicios.FormattingEnabled = true;
+            this.clb_servicios.Location = new System.Drawing.Point(24, 116);
+            this.clb_servicios.Name = "clb_servicios";
+            this.clb_servicios.Size = new System.Drawing.Size(560, 174);
+            this.clb_servicios.TabIndex = 28;
+            this.clb_servicios.MouseUp += new System.Windows.Forms.MouseEventHandler(this.clb_servicios_MouseUp);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -255,19 +283,6 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "Servicios disponibles";
             // 
-            // clb_servicios
-            // 
-            this.clb_servicios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.clb_servicios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.clb_servicios.CheckOnClick = true;
-            this.clb_servicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clb_servicios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.clb_servicios.FormattingEnabled = true;
-            this.clb_servicios.Location = new System.Drawing.Point(25, 115);
-            this.clb_servicios.Name = "clb_servicios";
-            this.clb_servicios.Size = new System.Drawing.Size(560, 174);
-            this.clb_servicios.TabIndex = 28;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -282,7 +297,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.panel5.Controls.Add(this.txt_buscarServicio);
+            this.panel5.Controls.Add(this.txt_buscarSala);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.dgv_serviciosAsignados);
             this.panel5.Controls.Add(this.label6);
@@ -291,17 +306,25 @@
             this.panel5.Size = new System.Drawing.Size(1333, 320);
             this.panel5.TabIndex = 33;
             // 
-            // btn_limpiar
+            // txt_buscarSala
             // 
-            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.btn_limpiar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_limpiar;
-            this.btn_limpiar.Location = new System.Drawing.Point(412, 330);
-            this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(194, 62);
-            this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_limpiar.TabIndex = 34;
-            this.btn_limpiar.TabStop = false;
-            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            this.txt_buscarSala.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscarSala.Location = new System.Drawing.Point(1092, 3);
+            this.txt_buscarSala.Name = "txt_buscarSala";
+            this.txt_buscarSala.Size = new System.Drawing.Size(238, 34);
+            this.txt_buscarSala.TabIndex = 34;
+            this.txt_buscarSala.TextChanged += new System.EventHandler(this.txt_buscarServicio_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.label7.Location = new System.Drawing.Point(968, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 28);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Buscar sala";
             // 
             // btn_eliminar
             // 
@@ -339,25 +362,6 @@
             this.btn_guardar.TabStop = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
-            // txt_buscarServicio
-            // 
-            this.txt_buscarServicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscarServicio.Location = new System.Drawing.Point(1092, 3);
-            this.txt_buscarServicio.Name = "txt_buscarServicio";
-            this.txt_buscarServicio.Size = new System.Drawing.Size(238, 34);
-            this.txt_buscarServicio.TabIndex = 34;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label7.Location = new System.Drawing.Point(925, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 28);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Buscar servicio";
-            // 
             // frm_AsignarServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -381,12 +385,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_sala.ResumeLayout(false);
             this.pnl_sala.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_serviciosAsignados)).EndInit();
             this.pnl_servicio.ResumeLayout(false);
             this.pnl_servicio.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).EndInit();
@@ -418,7 +422,7 @@
         private System.Windows.Forms.PictureBox btn_eliminar;
         private System.Windows.Forms.PictureBox btn_modificar;
         private System.Windows.Forms.PictureBox btn_guardar;
-        private System.Windows.Forms.TextBox txt_buscarServicio;
+        private System.Windows.Forms.TextBox txt_buscarSala;
         private System.Windows.Forms.Label label7;
     }
 }

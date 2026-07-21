@@ -18,6 +18,7 @@ namespace PRY_SERVICESNOW
         public frm_AsignarServicios()
         {
             InitializeComponent();
+            servicios = new cls_asignarServicios();
             CargarServicios();
             CargarSalas();
             CargarAsignaciones();
@@ -83,38 +84,65 @@ namespace PRY_SERVICESNOW
                 );
             }
         }
-        private void CargarAsignaciones()
+        private void CargarAsignaciones(string buscarSala = "")
         {
-            cls_asignarServicios asignaciones =
-                new cls_asignarServicios();
-
-            dgv_serviciosAsignados.DataSource =
-                asignaciones.ObtenerAsignaciones();
-
-
-
-            dgv_serviciosAsignados.AutoSizeColumnsMode =
-                DataGridViewAutoSizeColumnsMode.Fill;
-
-            dgv_serviciosAsignados.SelectionMode =
-                DataGridViewSelectionMode.FullRowSelect;
-
-            dgv_serviciosAsignados.MultiSelect = false;
-            dgv_serviciosAsignados.ReadOnly = true;
-            dgv_serviciosAsignados.AllowUserToAddRows = false;
-            dgv_serviciosAsignados.RowHeadersVisible = false;
-
-            if (dgv_serviciosAsignados.Columns.Contains("id_sala"))
+            try
             {
-                dgv_serviciosAsignados.Columns["id_sala"].Visible = false;
-            }
+                dgv_serviciosAsignados.DataSource =
+                    servicios.ObtenerAsignaciones(buscarSala);
 
-            if (dgv_serviciosAsignados.Columns.Contains("id_servicios"))
+                dgv_serviciosAsignados.AutoSizeColumnsMode =
+                    DataGridViewAutoSizeColumnsMode.Fill;
+
+                dgv_serviciosAsignados.SelectionMode =
+                    DataGridViewSelectionMode.FullRowSelect;
+
+                dgv_serviciosAsignados.MultiSelect = false;
+                dgv_serviciosAsignados.ReadOnly = true;
+                dgv_serviciosAsignados.AllowUserToAddRows = false;
+                dgv_serviciosAsignados.RowHeadersVisible = false;
+
+                // Ocultar únicamente columnas internas
+                if (dgv_serviciosAsignados.Columns.Contains("id_sala"))
+                {
+                    dgv_serviciosAsignados.Columns["id_sala"].Visible = false;
+                }
+
+                if (dgv_serviciosAsignados.Columns.Contains("id_servicios"))
+                {
+                    dgv_serviciosAsignados.Columns["id_servicios"].Visible = false;
+                }
+
+                // Asegurar que Servicio sea visible
+                if (dgv_serviciosAsignados.Columns.Contains("Servicio"))
+                {
+                    dgv_serviciosAsignados.Columns["Servicio"].Visible = true;
+                }
+
+                // Orden de las columnas visibles
+                dgv_serviciosAsignados.Columns["ID"].DisplayIndex = 0;
+                dgv_serviciosAsignados.Columns["Sala"].DisplayIndex = 1;
+                dgv_serviciosAsignados.Columns["Servicio"].DisplayIndex = 2;
+                dgv_serviciosAsignados.Columns["Estado"].DisplayIndex = 3;
+
+                // Tamaño proporcional
+                dgv_serviciosAsignados.Columns["ID"].FillWeight = 15;
+                dgv_serviciosAsignados.Columns["Sala"].FillWeight = 30;
+                dgv_serviciosAsignados.Columns["Servicio"].FillWeight = 35;
+                dgv_serviciosAsignados.Columns["Estado"].FillWeight = 20;
+
+                dgv_serviciosAsignados.ClearSelection();
+            }
+            catch (Exception ex)
             {
-                dgv_serviciosAsignados.Columns["id_servicios"].Visible = false;
+                MessageBox.Show(
+                    "No se pudieron cargar las asignaciones.\n" +
+                    ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
-
-            dgv_serviciosAsignados.ClearSelection();
         }
         private List<int> ObtenerServiciosMarcados()
         {
@@ -438,6 +466,16 @@ namespace PRY_SERVICESNOW
                     MessageBoxIcon.Error
                 );
             }
+        }
+
+        private void txt_buscarServicio_TextChanged(object sender, EventArgs e)
+        {
+            CargarAsignaciones(txt_buscarSala.Text.Trim());
+        }
+
+        private void clb_servicios_MouseUp(object sender, MouseEventArgs e)
+        {
+            clb_servicios.ClearSelected();
         }
     }
 }
