@@ -111,7 +111,7 @@ namespace PRY_SERVICESNOW
 
             return tablaSalas;
         }
-        public DataTable ObtenerAsignaciones()
+        public DataTable ObtenerAsignaciones(string buscarSala = "")
         {
             DataTable tablaAsignaciones = new DataTable();
 
@@ -126,23 +126,37 @@ namespace PRY_SERVICESNOW
                     A.id_asignacionS AS ID,
                     A.id_sala,
                     A.id_servicios,
-                    SV.servicio AS Servicio,
                     S.nombre AS Sala,
+                    SV.servicio AS Servicio,
                     CASE
                         WHEN A.estado = 1 THEN 'Activo'
                         ELSE 'Inactivo'
                     END AS Estado
                 FROM Tbl_Asignacion_servicios AS A
+
                 INNER JOIN Tbl_Servicios AS SV
                     ON A.id_servicios = SV.id_servicio
+
                 INNER JOIN Tbl_Salas AS S
                     ON A.id_sala = S.id_sala
+
+                WHERE S.nombre LIKE CONCAT('%', @buscarSala, '%')
+
                 ORDER BY S.nombre, SV.servicio;";
 
-                    using (MySqlDataAdapter adaptador =
-                           new MySqlDataAdapter(consulta, conexion))
+                    using (MySqlCommand comando =
+                           new MySqlCommand(consulta, conexion))
                     {
-                        adaptador.Fill(tablaAsignaciones);
+                        comando.Parameters.AddWithValue(
+                            "@buscarSala",
+                            buscarSala
+                        );
+
+                        using (MySqlDataAdapter adaptador =
+                               new MySqlDataAdapter(comando))
+                        {
+                            adaptador.Fill(tablaAsignaciones);
+                        }
                     }
                 }
             }
@@ -224,43 +238,117 @@ namespace PRY_SERVICESNOW
                                 // =====================================
                                 // 0 = GUARDAR
                                 // =====================================
-                                case 0:
+                                case 0: // GUARDAR
+
+                                    string sqlComprobar = @"
+                                        SELECT
+                                            A.estado,
+                                            SV.servicio
+                                        FROM Tbl_Asignacion_servicios AS A
+                                        INNER JOIN Tbl_Servicios AS SV
+                                            ON A.id_servicios = SV.id_servicio
+                                        WHERE A.id_sala = @idSala
+                                          AND A.id_servicios = @idServicio
+                                        LIMIT 1;";
 
                                     string sqlInsertar = @"
-                                INSERT INTO Tbl_Asignacion_servicios
-                                (
-                                    id_servicios,
-                                    id_sala,
-                                    estado
-                                )
-                                VALUES
-                                (
-                                    @idServicio,
-                                    @idSala,
-                                    1
-                                )
-                                ON DUPLICATE KEY UPDATE
-                                    estado = 1;";
+                                        INSERT INTO Tbl_Asignacion_servicios
+                                        (
+                                            id_servicios,
+                                            id_sala,
+                                            estado
+                                        )
+                                        VALUES
+                                        (
+                                            @idServicio,
+                                            @idSala,
+                                            1
+                                        );";
+
+                                    string sqlReactivar = @"
+                                        UPDATE Tbl_Asignacion_servicios
+                                        SET estado = 1
+                                        WHERE id_sala = @idSala
+                                          AND id_servicios = @idServicio;";
 
                                     foreach (int idServicio in id_servicios)
                                     {
-                                        using (MySqlCommand comando =
-                                               new MySqlCommand(
-                                                   sqlInsertar,
-                                                   conexion,
-                                                   transaccion))
-                                        {
-                                            comando.Parameters.AddWithValue(
-                                                "@idServicio",
-                                                idServicio
-                                            );
+                                        int? estadoExistente = null;
+                                        string nombreServicio = "";
 
-                                            comando.Parameters.AddWithValue(
+                                        // Comprobar si el servicio ya está registrado en la sala
+                                        using (MySqlCommand comandoComprobar =
+                                               new MySqlCommand(sqlComprobar, conexion, transaccion))
+                                        {
+                                            comandoComprobar.Parameters.AddWithValue(
                                                 "@idSala",
                                                 id_sala
                                             );
 
-                                            comando.ExecuteNonQuery();
+                                            comandoComprobar.Parameters.AddWithValue(
+                                                "@idServicio",
+                                                idServicio
+                                            );
+
+                                            using (MySqlDataReader lector =
+                                                   comandoComprobar.ExecuteReader())
+                                            {
+                                                if (lector.Read())
+                                                {
+                                                    estadoExistente =
+                                                        Convert.ToInt32(lector["estado"]);
+
+                                                    nombreServicio =
+                                                        lector["servicio"].ToString();
+                                                }
+                                            }
+                                        }
+
+                                        // Ya existe y está activo
+                                        if (estadoExistente == 1)
+                                        {
+                                            throw new InvalidOperationException(
+                                                $"El servicio '{nombreServicio}' ya está asignado a esta sala."
+                                            );
+                                        }
+
+                                        // Existe, pero estaba eliminado lógicamente
+                                        if (estadoExistente == 0)
+                                        {
+                                            using (MySqlCommand comandoReactivar =
+                                                   new MySqlCommand(sqlReactivar, conexion, transaccion))
+                                            {
+                                                comandoReactivar.Parameters.AddWithValue(
+                                                    "@idSala",
+                                                    id_sala
+                                                );
+
+                                                comandoReactivar.Parameters.AddWithValue(
+                                                    "@idServicio",
+                                                    idServicio
+                                                );
+
+                                                comandoReactivar.ExecuteNonQuery();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            // No existe, entonces se registra
+                                            using (MySqlCommand comandoInsertar =
+                                                   new MySqlCommand(sqlInsertar, conexion, transaccion))
+                                            {
+                                                comandoInsertar.Parameters.AddWithValue(
+                                                    "@idServicio",
+                                                    idServicio
+                                                );
+
+                                                comandoInsertar.Parameters.AddWithValue(
+                                                    "@idSala",
+                                                    id_sala
+                                                );
+
+                                                comandoInsertar.ExecuteNonQuery();
+                                            }
                                         }
                                     }
 
