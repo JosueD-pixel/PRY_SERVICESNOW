@@ -228,5 +228,48 @@ namespace PRY_SERVICESNOW
 
         }
 
+        public int ObtenerInventario(int id_mobiliario)
+        {
+            int cantidad = 0;
+
+            cls_Conexion conexionBD = new cls_Conexion();
+
+            using (var conexion = conexionBD.AbrirConexion())
+            {
+                string sql = @"SELECT cantidad 
+                       FROM tbl_mobiliario 
+                       WHERE id_mobiliario = @id;";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                {
+                    cmd.Parameters.AddWithValue("@id", id_mobiliario);
+                    cantidad = Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+
+            return cantidad;
+        }
+        public int ObtenerCantidadAsignada(int id_mobiliario)
+        {
+            int total = 0;
+
+            cls_Conexion conexionBD = new cls_Conexion();
+
+            using (var conexion = conexionBD.AbrirConexion())
+            {
+                string sql = @"SELECT IFNULL(SUM(cantidad_pasada), 0) 
+                       FROM tbl_asignacion_mobiliario
+                       WHERE id_mobiliario = @id;";
+
+                using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
+                {
+                    cmd.Parameters.AddWithValue("@id", id_mobiliario);
+                    total = Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+
+            return total;
+        }
+
     }
 }

@@ -104,6 +104,12 @@
     <Compile Include="frmTrabajdoresMODIFICAR.Designer.cs">
       <DependentUpon>frmTrabajdoresMODIFICAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_AsignarMobiliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AsignarMobiliario.Designer.cs">
+      <DependentUpon>frm_AsignarMobiliario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTrabajdoresMODIFICAR.resx">
       <DependentUpon>frmTrabajdoresMODIFICAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AsignarMobiliario.resx">
+      <DependentUpon>frm_AsignarMobiliario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
@@ -294,6 +303,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img_cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn_salones1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -252,6 +252,7 @@
             this.btn_agregarReserva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_agregarReserva.TabIndex = 2;
             this.btn_agregarReserva.TabStop = false;
+            this.btn_agregarReserva.Click += new System.EventHandler(this.btn_agregarReserva_Click);
             // 
             // btn_reservas
             // 
@@ -416,6 +417,7 @@
             this.btn_salasMobiliario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_salasMobiliario.TabIndex = 3;
             this.btn_salasMobiliario.TabStop = false;
+            this.btn_salasMobiliario.Click += new System.EventHandler(this.btn_salasMobiliario_Click);
             // 
             // btn_salaAgregar
             // 

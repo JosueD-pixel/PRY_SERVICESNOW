@@ -149,7 +149,7 @@ namespace PRY_SERVICESNOW
                     using (MySqlCommand comando = new MySqlCommand(sql, conexion))
                     {
                         comando.Parameters.AddWithValue("@busqueda", "%" + texto + "%");
-
+                     
                         using (MySqlDataAdapter adaptador = new MySqlDataAdapter(comando))
                         {
                             adaptador.Fill(tabla);
