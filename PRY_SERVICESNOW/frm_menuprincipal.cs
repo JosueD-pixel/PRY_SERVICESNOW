@@ -173,6 +173,10 @@ namespace PRY_SERVICESNOW
             menu.AgregarAlContenedor(new frm_salasCRUDd(), pnl_formulario);
         }
 
+        private void btn_salasMobiliario_Click(object sender, EventArgs e)
+        {
+            menu = new cls_menu();
+            menu.AgregarAlContenedor(new frm_AsignarMobiliario(), pnl_formulario);
         private void btn_salaServicios_Click(object sender, EventArgs e)
         {
             menu = new cls_menu();
