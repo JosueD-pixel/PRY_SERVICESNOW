@@ -110,6 +110,11 @@
     </Compile>
     <Compile Include="frm_AsignarMobiliario.Designer.cs">
       <DependentUpon>frm_AsignarMobiliario.cs</DependentUpon>
+    <Compile Include="frm_AsignarServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AsignarServicios.Designer.cs">
+      <DependentUpon>frm_AsignarServicios.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
@@ -160,6 +165,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AsignarMobiliario.resx">
       <DependentUpon>frm_AsignarMobiliario.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AsignarServicios.resx">
+      <DependentUpon>frm_AsignarServicios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>

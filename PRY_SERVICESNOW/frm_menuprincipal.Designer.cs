@@ -406,6 +406,7 @@
             this.btn_salaServicios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_salaServicios.TabIndex = 4;
             this.btn_salaServicios.TabStop = false;
+            this.btn_salaServicios.Click += new System.EventHandler(this.btn_salaServicios_Click);
             // 
             // btn_salasMobiliario
             // 
