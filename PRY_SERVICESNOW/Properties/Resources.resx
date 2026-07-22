@@ -181,6 +181,9 @@
   <data name="img_hojablanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_hojablanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="boton_mobilario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_mobilario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,8 +205,17 @@
   <data name="boton_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="botonReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\botonReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_reporteSINFONDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_reporteSINFONDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_apoyo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_apoyo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +235,7 @@
   <data name="img_apoyo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_apoyo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

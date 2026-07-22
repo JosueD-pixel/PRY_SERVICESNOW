@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +47,9 @@
     <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
       <HintPath>..\packages\MySqlConnector.2.6.1\lib\net471\MySqlConnector.dll</HintPath>
     </Reference>
+    <Reference Include="QuestPDF, Version=2026.7.1.0, Culture=neutral, PublicKeyToken=0f3c2b2315ff52c8, processorArchitecture=MSIL">
+      <HintPath>..\packages\QuestPDF.2026.7.1\lib\netstandard2.0\QuestPDF.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -57,8 +62,8 @@
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -85,6 +90,7 @@
     <Compile Include="cls_menu.cs" />
     <Compile Include="cls_Mobiliario.cs" />
     <Compile Include="cls_puestos.cs" />
+    <Compile Include="cls_reportes.cs" />
     <Compile Include="cls_salas.cs" />
     <Compile Include="cls_servicios.cs" />
     <Compile Include="frmTrabajadoresAGREGAR.cs">
@@ -129,6 +135,12 @@
     <Compile Include="frm_mobiliario.Designer.cs">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reportes.Designer.cs">
+      <DependentUpon>frm_reportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_reservas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_mobiliario.resx">
       <DependentUpon>frm_mobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reportes.resx">
+      <DependentUpon>frm_reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_reservas.resx">
       <DependentUpon>frm_reservas.cs</DependentUpon>
@@ -305,5 +320,24 @@
   <ItemGroup>
     <None Include="Resources\img_cancelar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_reporteSINFONDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonReporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_reporte.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets'))" />
+  </Target>
 </Project>

@@ -153,6 +153,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap botonReporte {
+            get {
+                object obj = ResourceManager.GetObject("botonReporte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_ingresar {
             get {
                 object obj = ResourceManager.GetObject("btn_ingresar", resourceCulture);
@@ -166,6 +176,26 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap btn_mobiliario {
             get {
                 object obj = ResourceManager.GetObject("btn_mobiliario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_reportes {
+            get {
+                object obj = ResourceManager.GetObject("btn_reportes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_reporteSINFONDO {
+            get {
+                object obj = ResourceManager.GetObject("btn_reporteSINFONDO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,16 +243,6 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icn_salones {
-            get {
-                object obj = ResourceManager.GetObject("icn_salones", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icn_user {
             get {
                 object obj = ResourceManager.GetObject("icn_user", resourceCulture);
@@ -236,6 +256,16 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap icon_mobiliario {
             get {
                 object obj = ResourceManager.GetObject("icon_mobiliario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_reporte {
+            get {
+                object obj = ResourceManager.GetObject("icon_reporte", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
