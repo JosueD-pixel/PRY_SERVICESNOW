@@ -1,0 +1,321 @@
+﻿namespace PRY_SERVICESNOW
+{
+    partial class frm_reportes
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.pnl_superior = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.gpb_reportes = new System.Windows.Forms.GroupBox();
+            this.rdb_consulta3 = new System.Windows.Forms.RadioButton();
+            this.rdb_consulta2 = new System.Windows.Forms.RadioButton();
+            this.rdb_consulta1 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dgv_reportes = new System.Windows.Forms.DataGridView();
+            this.btn_ver = new System.Windows.Forms.Button();
+            this.btnGenerarPDF = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_superior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.gpb_reportes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pnl_superior
+            // 
+            this.pnl_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.pnl_superior.Controls.Add(this.pictureBox3);
+            this.pnl_superior.Controls.Add(this.pictureBox2);
+            this.pnl_superior.Controls.Add(this.pictureBox1);
+            this.pnl_superior.Controls.Add(this.label1);
+            this.pnl_superior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_superior.Location = new System.Drawing.Point(0, 0);
+            this.pnl_superior.Name = "pnl_superior";
+            this.pnl_superior.Size = new System.Drawing.Size(1578, 60);
+            this.pnl_superior.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icon_reporte;
+            this.pictureBox1.Location = new System.Drawing.Point(788, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(630, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "REPORTES";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 60);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(31, 784);
+            this.panel4.TabIndex = 21;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(31, 784);
+            this.panel1.TabIndex = 22;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1547, 60);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(31, 784);
+            this.panel3.TabIndex = 22;
+            // 
+            // gpb_reportes
+            // 
+            this.gpb_reportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.gpb_reportes.Controls.Add(this.rdb_consulta3);
+            this.gpb_reportes.Controls.Add(this.rdb_consulta2);
+            this.gpb_reportes.Controls.Add(this.rdb_consulta1);
+            this.gpb_reportes.Controls.Add(this.label6);
+            this.gpb_reportes.Location = new System.Drawing.Point(114, 102);
+            this.gpb_reportes.Name = "gpb_reportes";
+            this.gpb_reportes.Size = new System.Drawing.Size(1301, 257);
+            this.gpb_reportes.TabIndex = 23;
+            this.gpb_reportes.TabStop = false;
+            // 
+            // rdb_consulta3
+            // 
+            this.rdb_consulta3.AutoSize = true;
+            this.rdb_consulta3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdb_consulta3.Location = new System.Drawing.Point(44, 196);
+            this.rdb_consulta3.Name = "rdb_consulta3";
+            this.rdb_consulta3.Size = new System.Drawing.Size(346, 24);
+            this.rdb_consulta3.TabIndex = 34;
+            this.rdb_consulta3.TabStop = true;
+            this.rdb_consulta3.Text = "Consultar mobiliario asignado a cada sala.";
+            this.rdb_consulta3.UseVisualStyleBackColor = true;
+            // 
+            // rdb_consulta2
+            // 
+            this.rdb_consulta2.AutoSize = true;
+            this.rdb_consulta2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdb_consulta2.Location = new System.Drawing.Point(44, 138);
+            this.rdb_consulta2.Name = "rdb_consulta2";
+            this.rdb_consulta2.Size = new System.Drawing.Size(350, 24);
+            this.rdb_consulta2.TabIndex = 33;
+            this.rdb_consulta2.TabStop = true;
+            this.rdb_consulta2.Text = "Consultar servicios asignados a cada sala.";
+            this.rdb_consulta2.UseVisualStyleBackColor = true;
+            // 
+            // rdb_consulta1
+            // 
+            this.rdb_consulta1.AutoSize = true;
+            this.rdb_consulta1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdb_consulta1.Location = new System.Drawing.Point(44, 86);
+            this.rdb_consulta1.Name = "rdb_consulta1";
+            this.rdb_consulta1.Size = new System.Drawing.Size(432, 24);
+            this.rdb_consulta1.TabIndex = 32;
+            this.rdb_consulta1.TabStop = true;
+            this.rdb_consulta1.Text = "Consultar reservas con trabajador, sala y tipo de sala.";
+            this.rdb_consulta1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.label6.Location = new System.Drawing.Point(27, 18);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(451, 38);
+            this.label6.TabIndex = 31;
+            this.label6.Text = "Opciones de reportes disponibles";
+            // 
+            // dgv_reportes
+            // 
+            this.dgv_reportes.AllowUserToAddRows = false;
+            this.dgv_reportes.AllowUserToDeleteRows = false;
+            this.dgv_reportes.AllowUserToResizeColumns = false;
+            this.dgv_reportes.AllowUserToResizeRows = false;
+            this.dgv_reportes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.dgv_reportes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_reportes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_reportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_reportes.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_reportes.EnableHeadersVisualStyles = false;
+            this.dgv_reportes.Location = new System.Drawing.Point(127, 417);
+            this.dgv_reportes.MultiSelect = false;
+            this.dgv_reportes.Name = "dgv_reportes";
+            this.dgv_reportes.ReadOnly = true;
+            this.dgv_reportes.RowHeadersVisible = false;
+            this.dgv_reportes.RowHeadersWidth = 51;
+            this.dgv_reportes.RowTemplate.Height = 24;
+            this.dgv_reportes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_reportes.Size = new System.Drawing.Size(1288, 336);
+            this.dgv_reportes.TabIndex = 33;
+            // 
+            // btn_ver
+            // 
+            this.btn_ver.Location = new System.Drawing.Point(602, 370);
+            this.btn_ver.Name = "btn_ver";
+            this.btn_ver.Size = new System.Drawing.Size(355, 41);
+            this.btn_ver.TabIndex = 34;
+            this.btn_ver.Text = "Ver";
+            this.btn_ver.UseVisualStyleBackColor = true;
+            this.btn_ver.Click += new System.EventHandler(this.btn_ver_Click);
+            // 
+            // btnGenerarPDF
+            // 
+            this.btnGenerarPDF.Location = new System.Drawing.Point(602, 759);
+            this.btnGenerarPDF.Name = "btnGenerarPDF";
+            this.btnGenerarPDF.Size = new System.Drawing.Size(355, 43);
+            this.btnGenerarPDF.TabIndex = 35;
+            this.btnGenerarPDF.Text = "Generar pdf";
+            this.btnGenerarPDF.UseVisualStyleBackColor = true;
+            this.btnGenerarPDF.Click += new System.EventHandler(this.btnGenerarPDF_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(31, 818);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1516, 26);
+            this.panel2.TabIndex = 36;
+            // 
+            // frm_reportes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1578, 844);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnGenerarPDF);
+            this.Controls.Add(this.btn_ver);
+            this.Controls.Add(this.dgv_reportes);
+            this.Controls.Add(this.gpb_reportes);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pnl_superior);
+            this.Name = "frm_reportes";
+            this.Text = "frm_reportes";
+            this.Load += new System.EventHandler(this.frm_reportes_Load);
+            this.pnl_superior.ResumeLayout(false);
+            this.pnl_superior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.gpb_reportes.ResumeLayout(false);
+            this.gpb_reportes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel pnl_superior;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.GroupBox gpb_reportes;
+        private System.Windows.Forms.RadioButton rdb_consulta3;
+        private System.Windows.Forms.RadioButton rdb_consulta2;
+        private System.Windows.Forms.RadioButton rdb_consulta1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgv_reportes;
+        private System.Windows.Forms.Button btn_ver;
+        private System.Windows.Forms.Button btnGenerarPDF;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+    }
+}

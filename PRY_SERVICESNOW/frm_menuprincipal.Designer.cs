@@ -34,6 +34,7 @@
             this.lblRol = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_menu = new System.Windows.Forms.Panel();
+            this.btn_Reportes = new System.Windows.Forms.PictureBox();
             this.pnl_reservas = new System.Windows.Forms.Panel();
             this.pnl_trabajadores = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -63,6 +64,7 @@
             this.btn_menu = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
             this.pnl_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Reportes)).BeginInit();
             this.pnl_reservas.SuspendLayout();
             this.pnl_trabajadores.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -140,6 +142,7 @@
             // pnl_menu
             // 
             this.pnl_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.pnl_menu.Controls.Add(this.btn_Reportes);
             this.pnl_menu.Controls.Add(this.btn_cerrarSesion);
             this.pnl_menu.Controls.Add(this.btn_Mobiliario);
             this.pnl_menu.Controls.Add(this.btn_Servicios);
@@ -155,6 +158,17 @@
             this.pnl_menu.Size = new System.Drawing.Size(250, 1020);
             this.pnl_menu.TabIndex = 1;
             // 
+            // btn_Reportes
+            // 
+            this.btn_Reportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Reportes.Image = global::PRY_SERVICESNOW.Properties.Resources.btn_reportes;
+            this.btn_Reportes.Location = new System.Drawing.Point(0, 793);
+            this.btn_Reportes.Name = "btn_Reportes";
+            this.btn_Reportes.Size = new System.Drawing.Size(250, 50);
+            this.btn_Reportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Reportes.TabIndex = 9;
+            this.btn_Reportes.TabStop = false;
+            this.btn_Reportes.Click += new System.EventHandler(this.btn_Reportes_Click);
             // pnl_reservas
             // 
             this.pnl_reservas.Controls.Add(this.btn_buscaReservas);
@@ -467,6 +481,7 @@
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
             this.pnl_menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Reportes)).EndInit();
             this.pnl_reservas.ResumeLayout(false);
             this.pnl_trabajadores.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -531,5 +546,6 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.Panel pnl_formulario;
+        private System.Windows.Forms.PictureBox btn_Reportes;
     }
 }
