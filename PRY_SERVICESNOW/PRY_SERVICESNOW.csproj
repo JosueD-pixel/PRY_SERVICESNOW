@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsTrabajadores.cs" />
+    <Compile Include="cls_AsignarMobiliarios.cs" />
     <Compile Include="cls_asignarServicios.cs" />
     <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_login.cs" />
@@ -147,6 +148,12 @@
     <Compile Include="frm_servicios.Designer.cs">
       <DependentUpon>frm_servicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frn_Asignarmobiliarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frn_Asignarmobiliarios.Designer.cs">
+      <DependentUpon>frn_Asignarmobiliarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmTrabajadoresAGREGAR.resx">
@@ -178,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_servicios.resx">
       <DependentUpon>frm_servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frn_Asignarmobiliarios.resx">
+      <DependentUpon>frn_Asignarmobiliarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
