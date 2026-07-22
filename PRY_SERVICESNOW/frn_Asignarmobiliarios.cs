@@ -109,5 +109,10 @@ namespace PRY_SERVICESNOW
         {
             dgv_asignaciones.DataSource = asignacion.Buscar(txt_buscar.Text.Trim());
         }
+
+        private void dgv_asignaciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

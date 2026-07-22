@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_superior = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_mobiliario = new System.Windows.Forms.Panel();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
@@ -39,6 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_nombreMobiliario = new System.Windows.Forms.TextBox();
+            this.btn_limpiar = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_idMobiliario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,25 +51,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_buscarServicio = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dgv_mobiliario = new System.Windows.Forms.DataGridView();
             this.btn_modificar = new System.Windows.Forms.PictureBox();
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
+            this.dgv_mobiliario = new System.Windows.Forms.DataGridView();
             this.btn_guardar = new System.Windows.Forms.PictureBox();
-            this.btn_limpiar = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
-            this.pnl_mobiliario.SuspendLayout();
-            this.pnl_mobil2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnl_mobiliario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
+            this.pnl_mobil2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
@@ -80,6 +80,36 @@
             this.pnl_superior.Name = "pnl_superior";
             this.pnl_superior.Size = new System.Drawing.Size(1578, 60);
             this.pnl_superior.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icon_mobiliario;
+            this.pictureBox1.Location = new System.Drawing.Point(807, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -169,6 +199,17 @@
             this.txt_nombreMobiliario.Size = new System.Drawing.Size(238, 34);
             this.txt_nombreMobiliario.TabIndex = 16;
             // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_limpiar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_limpiar;
+            this.btn_limpiar.Location = new System.Drawing.Point(275, 566);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(194, 62);
+            this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_limpiar.TabIndex = 19;
+            this.btn_limpiar.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -257,43 +298,6 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "Buscar mobiliario";
             // 
-            // dgv_mobiliario
-            // 
-            this.dgv_mobiliario.AllowUserToAddRows = false;
-            this.dgv_mobiliario.AllowUserToDeleteRows = false;
-            this.dgv_mobiliario.AllowUserToResizeColumns = false;
-            this.dgv_mobiliario.AllowUserToResizeRows = false;
-            this.dgv_mobiliario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.dgv_mobiliario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_mobiliario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_mobiliario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_mobiliario.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_mobiliario.EnableHeadersVisualStyles = false;
-            this.dgv_mobiliario.Location = new System.Drawing.Point(33, 68);
-            this.dgv_mobiliario.MultiSelect = false;
-            this.dgv_mobiliario.Name = "dgv_mobiliario";
-            this.dgv_mobiliario.ReadOnly = true;
-            this.dgv_mobiliario.RowHeadersVisible = false;
-            this.dgv_mobiliario.RowHeadersWidth = 51;
-            this.dgv_mobiliario.RowTemplate.Height = 24;
-            this.dgv_mobiliario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_mobiliario.Size = new System.Drawing.Size(825, 472);
-            this.dgv_mobiliario.TabIndex = 3;
-            // 
             // btn_modificar
             // 
             this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
@@ -316,6 +320,43 @@
             this.btn_eliminar.TabIndex = 20;
             this.btn_eliminar.TabStop = false;
             // 
+            // dgv_mobiliario
+            // 
+            this.dgv_mobiliario.AllowUserToAddRows = false;
+            this.dgv_mobiliario.AllowUserToDeleteRows = false;
+            this.dgv_mobiliario.AllowUserToResizeColumns = false;
+            this.dgv_mobiliario.AllowUserToResizeRows = false;
+            this.dgv_mobiliario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.dgv_mobiliario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_mobiliario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_mobiliario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_mobiliario.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_mobiliario.EnableHeadersVisualStyles = false;
+            this.dgv_mobiliario.Location = new System.Drawing.Point(33, 68);
+            this.dgv_mobiliario.MultiSelect = false;
+            this.dgv_mobiliario.Name = "dgv_mobiliario";
+            this.dgv_mobiliario.ReadOnly = true;
+            this.dgv_mobiliario.RowHeadersVisible = false;
+            this.dgv_mobiliario.RowHeadersWidth = 51;
+            this.dgv_mobiliario.RowTemplate.Height = 24;
+            this.dgv_mobiliario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_mobiliario.Size = new System.Drawing.Size(825, 472);
+            this.dgv_mobiliario.TabIndex = 3;
+            // 
             // btn_guardar
             // 
             this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
@@ -328,51 +369,11 @@
             this.btn_guardar.TabStop = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
-            // btn_limpiar
-            // 
-            this.btn_limpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.btn_limpiar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_limpiar;
-            this.btn_limpiar.Location = new System.Drawing.Point(275, 566);
-            this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(194, 62);
-            this.btn_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_limpiar.TabIndex = 19;
-            this.btn_limpiar.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icon_mobiliario;
-            this.pictureBox1.Location = new System.Drawing.Point(807, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // frm_mobiliario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1578, 844);
             this.Controls.Add(this.pnl_mobil2);
             this.Controls.Add(this.pnl_mobiliario);
@@ -381,18 +382,18 @@
             this.Text = "frm_mobiliario";
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
-            this.pnl_mobiliario.ResumeLayout(false);
-            this.pnl_mobiliario.PerformLayout();
-            this.pnl_mobil2.ResumeLayout(false);
-            this.pnl_mobil2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnl_mobiliario.ResumeLayout(false);
+            this.pnl_mobiliario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
+            this.pnl_mobil2.ResumeLayout(false);
+            this.pnl_mobil2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_modificar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_mobiliario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_guardar)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -315,5 +315,26 @@
   <ItemGroup>
     <None Include="Resources\img_cancelar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn_salones1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_ASIGNARMOBILIARIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_ASIGNARSERVICIOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_serviciosicn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_mobiliarioicn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_salasboton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
