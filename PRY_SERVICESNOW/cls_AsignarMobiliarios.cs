@@ -208,9 +208,9 @@ namespace PRY_SERVICESNOW
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, conexion))
                 {
-                    cmd.Parameters.AddWithValue("@id_mobiliario", id_mobiliario);
-                    cmd.Parameters.AddWithValue("@id_sala", id_sala);
-                    cmd.Parameters.AddWithValue("@cantidad_pasada", cantidad_pasada);
+                    cmd.Parameters.AddWithValue("@id_mobiliario", Id_mobiliario);
+                    cmd.Parameters.AddWithValue("@id_sala", Id_sala);
+                    cmd.Parameters.AddWithValue("@cantidad_pasada", Cantidad_pasada);
                     cmd.Parameters.AddWithValue("@folio", GenerarFolio());
 
 
