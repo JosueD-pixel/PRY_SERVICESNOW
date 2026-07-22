@@ -79,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsTrabajadores.cs" />
-    <Compile Include="cls_Asignarmobiliario.cs" />
+    <Compile Include="cls_asignarServicios.cs" />
     <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_login.cs" />
     <Compile Include="cls_menu.cs" />
@@ -105,11 +105,6 @@
     <Compile Include="frmTrabajdoresMODIFICAR.Designer.cs">
       <DependentUpon>frmTrabajdoresMODIFICAR.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AsignarMobiliario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AsignarMobiliario.Designer.cs">
-      <DependentUpon>frm_AsignarMobiliario.cs</DependentUpon>
     <Compile Include="frm_AsignarServicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,8 +158,6 @@
     <EmbeddedResource Include="frmTrabajdoresMODIFICAR.resx">
       <DependentUpon>frmTrabajdoresMODIFICAR.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AsignarMobiliario.resx">
-      <DependentUpon>frm_AsignarMobiliario.cs</DependentUpon>
     <EmbeddedResource Include="frm_AsignarServicios.resx">
       <DependentUpon>frm_AsignarServicios.cs</DependentUpon>
     </EmbeddedResource>

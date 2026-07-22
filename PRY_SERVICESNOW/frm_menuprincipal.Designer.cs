@@ -417,7 +417,6 @@
             this.btn_salasMobiliario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_salasMobiliario.TabIndex = 3;
             this.btn_salasMobiliario.TabStop = false;
-            this.btn_salasMobiliario.Click += new System.EventHandler(this.btn_salasMobiliario_Click);
             // 
             // btn_salaAgregar
             // 
