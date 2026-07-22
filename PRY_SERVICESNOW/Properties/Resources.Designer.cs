@@ -313,6 +313,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen5 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_apoyo {
             get {
                 object obj = ResourceManager.GetObject("img_apoyo", resourceCulture);
@@ -356,6 +366,26 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap img_apoyo4 {
             get {
                 object obj = ResourceManager.GetObject("img_apoyo4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_ASIGNARMOBILIARIO {
+            get {
+                object obj = ResourceManager.GetObject("IMG_ASIGNARMOBILIARIO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_ASIGNARSERVICIOS {
+            get {
+                object obj = ResourceManager.GetObject("IMG_ASIGNARSERVICIOS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +443,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_mobiliarioicn {
+            get {
+                object obj = ResourceManager.GetObject("img_mobiliarioicn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_reservas1 {
             get {
                 object obj = ResourceManager.GetObject("img_reservas1", resourceCulture);
@@ -426,6 +466,26 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap img_salas {
             get {
                 object obj = ResourceManager.GetObject("img_salas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_salasboton {
+            get {
+                object obj = ResourceManager.GetObject("img_salasboton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_serviciosicn {
+            get {
+                object obj = ResourceManager.GetObject("img_serviciosicn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

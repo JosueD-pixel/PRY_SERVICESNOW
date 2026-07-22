@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsTrabajadores.cs" />
+    <Compile Include="cls_AsignarMobiliarios.cs" />
     <Compile Include="cls_asignarServicios.cs" />
     <Compile Include="cls_Conexion.cs" />
     <Compile Include="cls_login.cs" />
@@ -159,6 +160,12 @@
     <Compile Include="frm_servicios.Designer.cs">
       <DependentUpon>frm_servicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frn_Asignarmobiliarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frn_Asignarmobiliarios.Designer.cs">
+      <DependentUpon>frn_Asignarmobiliarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmTrabajadoresAGREGAR.resx">
@@ -193,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_servicios.resx">
       <DependentUpon>frm_servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frn_Asignarmobiliarios.resx">
+      <DependentUpon>frn_Asignarmobiliarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -321,16 +331,31 @@
     <None Include="Resources\img_cancelar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_reporteSINFONDO.png" />
+    <None Include="Resources\icn_salones1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\botonReporte.png" />
+    <None Include="Resources\IMG_ASIGNARMOBILIARIO.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btn_reportes.png" />
+    <None Include="Resources\IMG_ASIGNARSERVICIOS.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon_reporte.png" />
+    <None Include="Resources\img_serviciosicn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_mobiliarioicn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_salasboton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen5.png" />
+  </ItemGroup>
+  <ItemGroup>
+  <None Include="Resources\btn_reportesSINFONDO.png" />
+  <None Include="Resources\botonReporte.png" />
+  <None Include="Resources\btn_reportes.png" />
+  <None Include="Resources\icon_reporte.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets')" />

@@ -18,7 +18,7 @@ namespace PRY_SERVICESNOW
             Application.SetCompatibleTextRenderingDefault(false);
 
             QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
-            Application.Run(new frm_menuprincipal());
+            Application.Run(new frm_login());
         }
     }
 }
