@@ -243,6 +243,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icn_salones {
+            get {
+                object obj = ResourceManager.GetObject("icn_salones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icn_user {
             get {
                 object obj = ResourceManager.GetObject("icn_user", resourceCulture);
