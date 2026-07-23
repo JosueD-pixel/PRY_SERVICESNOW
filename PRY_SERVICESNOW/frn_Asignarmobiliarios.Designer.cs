@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_superior = new System.Windows.Forms.Panel();
@@ -165,7 +165,7 @@
             this.pnl_mobiliario.Controls.Add(this.label3);
             this.pnl_mobiliario.Controls.Add(this.label2);
             this.pnl_mobiliario.Controls.Add(this.btn_guardar);
-            this.pnl_mobiliario.Location = new System.Drawing.Point(121, 160);
+            this.pnl_mobiliario.Location = new System.Drawing.Point(145, 96);
             this.pnl_mobiliario.Name = "pnl_mobiliario";
             this.pnl_mobiliario.Size = new System.Drawing.Size(526, 650);
             this.pnl_mobiliario.TabIndex = 26;
@@ -304,25 +304,25 @@
             this.dgv_asignaciones.AllowUserToResizeRows = false;
             this.dgv_asignaciones.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
             this.dgv_asignaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_asignaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_asignaciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_asignaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_asignaciones.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_asignaciones.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_asignaciones.EnableHeadersVisualStyles = false;
-            this.dgv_asignaciones.Location = new System.Drawing.Point(33, 68);
+            this.dgv_asignaciones.Location = new System.Drawing.Point(21, 102);
             this.dgv_asignaciones.MultiSelect = false;
             this.dgv_asignaciones.Name = "dgv_asignaciones";
             this.dgv_asignaciones.ReadOnly = true;
@@ -330,7 +330,7 @@
             this.dgv_asignaciones.RowHeadersWidth = 51;
             this.dgv_asignaciones.RowTemplate.Height = 24;
             this.dgv_asignaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_asignaciones.Size = new System.Drawing.Size(825, 560);
+            this.dgv_asignaciones.Size = new System.Drawing.Size(589, 526);
             this.dgv_asignaciones.TabIndex = 3;
             this.dgv_asignaciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_asignaciones_CellClick);
             this.dgv_asignaciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_asignaciones_CellContentClick);
@@ -342,9 +342,9 @@
             this.pnl_mobil2.Controls.Add(this.txt_buscar);
             this.pnl_mobil2.Controls.Add(this.label5);
             this.pnl_mobil2.Controls.Add(this.dgv_asignaciones);
-            this.pnl_mobil2.Location = new System.Drawing.Point(653, 160);
+            this.pnl_mobil2.Location = new System.Drawing.Point(701, 96);
             this.pnl_mobil2.Name = "pnl_mobil2";
-            this.pnl_mobil2.Size = new System.Drawing.Size(882, 650);
+            this.pnl_mobil2.Size = new System.Drawing.Size(672, 650);
             this.pnl_mobil2.TabIndex = 27;
             // 
             // label9
@@ -352,7 +352,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label9.Location = new System.Drawing.Point(26, 18);
+            this.label9.Location = new System.Drawing.Point(14, 21);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(303, 38);
             this.label9.TabIndex = 25;
@@ -361,7 +361,7 @@
             // txt_buscar
             // 
             this.txt_buscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscar.Location = new System.Drawing.Point(620, 28);
+            this.txt_buscar.Location = new System.Drawing.Point(215, 62);
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(238, 34);
             this.txt_buscar.TabIndex = 21;
@@ -372,11 +372,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label5.Location = new System.Drawing.Point(436, 28);
+            this.label5.Location = new System.Drawing.Point(21, 59);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(178, 28);
             this.label5.TabIndex = 20;
             this.label5.Text = "Buscar mobiliario";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // frn_Asignarmobiliarios
             // 

@@ -114,6 +114,7 @@ namespace PRY_SERVICESNOW
         {
             clsTrabajadores trabajador = new clsTrabajadores();
             dgv_trabajadores.DataSource = trabajador.CargarDataGrid();
+            dgv_trabajadores.Columns["Password"].Visible = false;
         }
 
 
@@ -167,10 +168,12 @@ namespace PRY_SERVICESNOW
             txt_cp.Text = fila.Cells["CP"].Value.ToString();
             txt_calle.Text = fila.Cells["Calle"].Value.ToString();
             txt_colonia.Text = fila.Cells["Colonia"].Value.ToString();
-            txt_password.Text = fila.Cells["Password"].Value.ToString();
+
+            txt_password.Text = "";
 
             cmb_estado.SelectedIndex = Convert.ToInt32(fila.Cells["Estado"].Value);
-            cmb_puesto.SelectedValue = Convert.ToInt32(fila.Cells["IdPuesto"].Value);
+
+            cmb_puesto.Text = fila.Cells["Puesto"].Value.ToString();
         }
     }
 }

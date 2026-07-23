@@ -88,15 +88,10 @@ namespace PRY_SERVICESNOW
 
             DataGridViewRow fila = dgv_asignaciones.Rows[e.RowIndex];
 
-            asignacion.Id_AsignacionM = Convert.ToInt32(fila.Cells["id_asignacionM"].Value);
-            asignacion.Id_sala = Convert.ToInt32(fila.Cells["id_sala"].Value);
-            asignacion.Id_mobiliario = Convert.ToInt32(fila.Cells["id_mobiliario"].Value);
-            asignacion.Cantidad_pasada = Convert.ToInt32(fila.Cells["cantidad_pasada"].Value);
-
-            cmb_sala.SelectedValue = asignacion.Id_sala;
-            cmb_mobiliario.SelectedValue = asignacion.Id_mobiliario;
-            nud_cantidad.Value = asignacion.Cantidad_pasada;
-            txt_folio.Text = fila.Cells["folio"].Value.ToString();
+            cmb_sala.Text = fila.Cells["Sala"].Value.ToString();
+            cmb_mobiliario.Text = fila.Cells["Mobiliario"].Value.ToString();
+            nud_cantidad.Value = Convert.ToInt32(fila.Cells["Cantidad"].Value);
+            txt_folio.Text = fila.Cells["Folio"].Value.ToString();
         }
 
         private void Limpiar()
@@ -111,6 +106,11 @@ namespace PRY_SERVICESNOW
         }
 
         private void dgv_asignaciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

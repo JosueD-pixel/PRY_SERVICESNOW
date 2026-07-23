@@ -57,21 +57,20 @@ namespace PRY_SERVICESNOW
                 using (var conexion = conexionBD.AbrirConexion())
                 {
                     string sql = @"SELECT 
-                            t.clave_trabajador AS Clave,
-                            t.nombre AS Nombre,
-                            t.apellidoP AS Paterno,
-                            t.apellidoM AS Materno,
-                            t.telefono AS Telefono,
-                            t.correo AS Correo,
-                            t.codigo_postal AS CP,
-                            t.calle AS Calle,
-                            t.colonia AS Colonia,
-                            t.estado AS Estado,
-                            p.id_puesto AS IdPuesto,
-                            p.puesto AS Puesto,
-                            t.password AS Password
-                        FROM tbl_trabajadores t
-                        INNER JOIN tbl_puesto p ON t.id_puesto = p.id_puesto;";
+        t.clave_trabajador AS Clave,
+        t.nombre AS Nombre,
+        t.apellidoP AS Paterno,
+        t.apellidoM AS Materno,
+        t.telefono AS Telefono,
+        t.correo AS Correo,
+        t.codigo_postal AS CP,
+        t.calle AS Calle,
+        t.colonia AS Colonia,
+        t.estado AS Estado,
+        p.puesto AS Puesto,
+        t.password AS Password   -- ✔ la contraseña vuelve
+    FROM tbl_trabajadores t
+    INNER JOIN tbl_puesto p ON t.id_puesto = p.id_puesto;";
 
                     adaptador = new MySqlDataAdapter(sql, conexion);
                     adaptador.Fill(tabla);
@@ -85,6 +84,7 @@ namespace PRY_SERVICESNOW
             return tabla;
         }
 
+
         // Buscar trabajadores
         public DataTable Consultar(string dato)
         {
@@ -96,25 +96,24 @@ namespace PRY_SERVICESNOW
                 using (var conexion = conexionBD.AbrirConexion())
                 {
                     string sql = @"SELECT 
-                                  clave_trabajador AS Clave,
-                                  nombre AS Nombre,
-                                  apellidoP AS Paterno,
-                                  apellidoM AS Materno,
-                                  telefono AS Telefono,
-                                  correo AS Correo,
-                                  codigo_postal AS CP,
-                                  calle AS Calle,
-                                  colonia AS Colonia,
-                                  estado AS Estado,
-                                  id_puesto AS Puesto,
-                                  password AS Password
-                             FROM Tbl_trabajadores
-                            WHERE clave_trabajador LIKE @dato
-                                  OR nombre LIKE @dato
-                                  OR apellidoP LIKE @dato
-                                  OR apellidoM LIKE @dato
-                                  OR correo LIKE @dato
-                                  OR telefono LIKE @dato;";
+                            clave_trabajador AS Clave,
+                            nombre AS Nombre,
+                            apellidoP AS Paterno,
+                            apellidoM AS Materno,
+                            telefono AS Telefono,
+                            correo AS Correo,
+                            codigo_postal AS CP,
+                            calle AS Calle,
+                            colonia AS Colonia,
+                            estado AS Estado
+                        FROM tbl_trabajadores
+                        WHERE clave_trabajador LIKE @dato
+                           OR nombre LIKE @dato
+                           OR apellidoP LIKE @dato
+                           OR apellidoM LIKE @dato
+                           OR correo LIKE @dato
+                           OR telefono LIKE @dato;";
+
                     comando = new MySqlCommand(sql, conexion);
                     comando.Parameters.AddWithValue("@dato", "%" + dato + "%");
 
@@ -129,6 +128,7 @@ namespace PRY_SERVICESNOW
 
             return tabla;
         }
+
 
         // Eliminar trabajador
         public string Eliminar()

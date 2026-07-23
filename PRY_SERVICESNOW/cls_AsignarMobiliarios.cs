@@ -67,19 +67,15 @@ namespace PRY_SERVICESNOW
             using (var conexion = conexionBD.AbrirConexion())
             {
                 string sql = @"
-         SELECT 
-             a.id_asignacionM,
-             a.id_mobiliario,
-             a.id_sala,
-             a.cantidad_pasada,
-             s.nombre AS Sala,
-             m.nombre AS Mobiliario,
-             a.cantidad_pasada AS Cantidad,
-             a.folio AS Folio
-         FROM tbl_asignacion_mobiliario a
-         INNER JOIN tbl_salas s ON a.id_sala = s.id_sala
-         INNER JOIN tbl_mobiliario m ON a.id_mobiliario = m.id_mobiliario;
-         ";
+        SELECT 
+            s.nombre AS Sala,
+            m.nombre AS Mobiliario,
+            a.cantidad_pasada AS Cantidad,
+            a.folio AS Folio
+        FROM tbl_asignacion_mobiliario a
+        INNER JOIN tbl_salas s ON a.id_sala = s.id_sala
+        INNER JOIN tbl_mobiliario m ON a.id_mobiliario = m.id_mobiliario;
+        ";
 
                 using (consulta = new MySqlDataAdapter(sql, conexion))
                 {

@@ -558,6 +558,7 @@
             this.label13.Size = new System.Drawing.Size(123, 28);
             this.label13.TabIndex = 17;
             this.label13.Text = "Contraseña:";
+            this.label13.Visible = false;
             // 
             // label11
             // 
@@ -579,6 +580,7 @@
             this.txt_password.Size = new System.Drawing.Size(216, 34);
             this.txt_password.TabIndex = 25;
             this.txt_password.UseSystemPasswordChar = true;
+            this.txt_password.Visible = false;
             // 
             // txt_buscar
             // 

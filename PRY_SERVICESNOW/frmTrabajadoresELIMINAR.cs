@@ -21,6 +21,7 @@ namespace PRY_SERVICESNOW
         {
             clsTrabajadores trabajador = new clsTrabajadores();
             dgv_trabajadores.DataSource = trabajador.CargarDataGrid();
+            dgv_trabajadores.Columns["Password"].Visible = false;
         }
 
         private void frmTrabajadoresELIMINAR_Load(object sender, EventArgs e)
