@@ -23,7 +23,8 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>1</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -356,6 +357,12 @@
     <None Include="Resources\botonReporte.png" />
     <None Include="Resources\btn_reportes.png" />
     <None Include="Resources\icon_reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_generareporte.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets')" />

@@ -21,7 +21,7 @@ namespace PRY_SERVICESNOW
 
         private void frm_reportes_Load(object sender, EventArgs e)
         {
-
+            ConfigurarDataGrid();
         }
 
         private void ConfigurarDataGrid()
@@ -48,8 +48,8 @@ namespace PRY_SERVICESNOW
             {
                 if (rdb_consulta1.Checked)
                 {
-                    tabla= reportes.ObtenerReservas();
-                    dgv_reportes.DataSource= tabla;
+                    tabla = reportes.ObtenerReservas();
+                    dgv_reportes.DataSource = tabla;
                 }
                 else if (rdb_consulta2.Checked)
                 {

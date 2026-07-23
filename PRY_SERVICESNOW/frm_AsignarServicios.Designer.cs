@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_superior = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -39,6 +39,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnl_sala = new System.Windows.Forms.Panel();
             this.btn_limpiar = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmb_sala = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgv_serviciosAsignados = new System.Windows.Forms.DataGridView();
             this.pnl_servicio = new System.Windows.Forms.Panel();
@@ -52,8 +54,7 @@
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
             this.btn_modificar = new System.Windows.Forms.PictureBox();
             this.btn_guardar = new System.Windows.Forms.PictureBox();
-            this.cmb_sala = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -104,7 +105,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.icon_servicios;
-            this.pictureBox1.Location = new System.Drawing.Point(856, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(869, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(69, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +150,7 @@
             this.pnl_sala.Controls.Add(this.label5);
             this.pnl_sala.Controls.Add(this.cmb_sala);
             this.pnl_sala.Controls.Add(this.label3);
-            this.pnl_sala.Location = new System.Drawing.Point(153, 443);
+            this.pnl_sala.Location = new System.Drawing.Point(153, 392);
             this.pnl_sala.Name = "pnl_sala";
             this.pnl_sala.Size = new System.Drawing.Size(625, 407);
             this.pnl_sala.TabIndex = 23;
@@ -165,6 +166,28 @@
             this.btn_limpiar.TabIndex = 34;
             this.btn_limpiar.TabStop = false;
             this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.label5.Location = new System.Drawing.Point(20, 74);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(161, 28);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Escoga una sala";
+            // 
+            // cmb_sala
+            // 
+            this.cmb_sala.BackColor = System.Drawing.Color.White;
+            this.cmb_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.cmb_sala.FormattingEnabled = true;
+            this.cmb_sala.Location = new System.Drawing.Point(25, 105);
+            this.cmb_sala.Name = "cmb_sala";
+            this.cmb_sala.Size = new System.Drawing.Size(454, 33);
+            this.cmb_sala.TabIndex = 29;
             // 
             // label3
             // 
@@ -185,23 +208,23 @@
             this.dgv_serviciosAsignados.AllowUserToResizeRows = false;
             this.dgv_serviciosAsignados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
             this.dgv_serviciosAsignados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_serviciosAsignados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_serviciosAsignados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgv_serviciosAsignados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_serviciosAsignados.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_serviciosAsignados.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgv_serviciosAsignados.EnableHeadersVisualStyles = false;
             this.dgv_serviciosAsignados.Location = new System.Drawing.Point(230, 44);
             this.dgv_serviciosAsignados.MultiSelect = false;
@@ -220,7 +243,7 @@
             this.pnl_servicio.Controls.Add(this.clb_servicios);
             this.pnl_servicio.Controls.Add(this.label2);
             this.pnl_servicio.Controls.Add(this.label4);
-            this.pnl_servicio.Location = new System.Drawing.Point(825, 443);
+            this.pnl_servicio.Location = new System.Drawing.Point(825, 392);
             this.pnl_servicio.Name = "pnl_servicio";
             this.pnl_servicio.Size = new System.Drawing.Size(661, 306);
             this.pnl_servicio.TabIndex = 30;
@@ -279,7 +302,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.dgv_serviciosAsignados);
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(153, 104);
+            this.panel5.Location = new System.Drawing.Point(153, 66);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1333, 320);
             this.panel5.TabIndex = 33;
@@ -308,7 +331,7 @@
             // 
             this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.btn_eliminar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_eliminar;
-            this.btn_eliminar.Location = new System.Drawing.Point(1272, 773);
+            this.btn_eliminar.Location = new System.Drawing.Point(1273, 737);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(194, 62);
             this.btn_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +343,7 @@
             // 
             this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.btn_modificar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_modificar;
-            this.btn_modificar.Location = new System.Drawing.Point(1060, 773);
+            this.btn_modificar.Location = new System.Drawing.Point(1035, 737);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(194, 62);
             this.btn_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -332,7 +355,7 @@
             // 
             this.btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.btn_guardar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_guardar;
-            this.btn_guardar.Location = new System.Drawing.Point(850, 773);
+            this.btn_guardar.Location = new System.Drawing.Point(825, 737);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(194, 62);
             this.btn_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -340,33 +363,23 @@
             this.btn_guardar.TabStop = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
-            // cmb_sala
+            // panel1
             // 
-            this.cmb_sala.BackColor = System.Drawing.Color.White;
-            this.cmb_sala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_sala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.cmb_sala.FormattingEnabled = true;
-            this.cmb_sala.Location = new System.Drawing.Point(25, 105);
-            this.cmb_sala.Name = "cmb_sala";
-            this.cmb_sala.Size = new System.Drawing.Size(454, 33);
-            this.cmb_sala.TabIndex = 29;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label5.Location = new System.Drawing.Point(20, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 28);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Escoga una sala";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(31, 831);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1516, 31);
+            this.panel1.TabIndex = 41;
             // 
             // frm_AsignarServicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1578, 862);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_guardar);
@@ -424,5 +437,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmb_sala;
+        private System.Windows.Forms.Panel panel1;
     }
 }

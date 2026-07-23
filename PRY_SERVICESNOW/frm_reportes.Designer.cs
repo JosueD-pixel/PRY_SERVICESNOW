@@ -44,9 +44,9 @@
             this.rdb_consulta1 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv_reportes = new System.Windows.Forms.DataGridView();
-            this.btn_ver = new System.Windows.Forms.Button();
-            this.btnGenerarPDF = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnGenerarPDF = new System.Windows.Forms.Button();
+            this.btn_ver = new System.Windows.Forms.Button();
             this.pnl_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -148,7 +148,7 @@
             this.gpb_reportes.Controls.Add(this.rdb_consulta2);
             this.gpb_reportes.Controls.Add(this.rdb_consulta1);
             this.gpb_reportes.Controls.Add(this.label6);
-            this.gpb_reportes.Location = new System.Drawing.Point(114, 102);
+            this.gpb_reportes.Location = new System.Drawing.Point(114, 80);
             this.gpb_reportes.Name = "gpb_reportes";
             this.gpb_reportes.Size = new System.Drawing.Size(1301, 257);
             this.gpb_reportes.TabIndex = 23;
@@ -236,28 +236,8 @@
             this.dgv_reportes.RowHeadersWidth = 51;
             this.dgv_reportes.RowTemplate.Height = 24;
             this.dgv_reportes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_reportes.Size = new System.Drawing.Size(1288, 336);
+            this.dgv_reportes.Size = new System.Drawing.Size(1288, 301);
             this.dgv_reportes.TabIndex = 33;
-            // 
-            // btn_ver
-            // 
-            this.btn_ver.Location = new System.Drawing.Point(602, 370);
-            this.btn_ver.Name = "btn_ver";
-            this.btn_ver.Size = new System.Drawing.Size(355, 41);
-            this.btn_ver.TabIndex = 34;
-            this.btn_ver.Text = "Ver";
-            this.btn_ver.UseVisualStyleBackColor = true;
-            this.btn_ver.Click += new System.EventHandler(this.btn_ver_Click);
-            // 
-            // btnGenerarPDF
-            // 
-            this.btnGenerarPDF.Location = new System.Drawing.Point(602, 759);
-            this.btnGenerarPDF.Name = "btnGenerarPDF";
-            this.btnGenerarPDF.Size = new System.Drawing.Size(355, 43);
-            this.btnGenerarPDF.TabIndex = 35;
-            this.btnGenerarPDF.Text = "Generar pdf";
-            this.btnGenerarPDF.UseVisualStyleBackColor = true;
-            this.btnGenerarPDF.Click += new System.EventHandler(this.btnGenerarPDF_Click);
             // 
             // panel2
             // 
@@ -269,10 +249,35 @@
             this.panel2.Size = new System.Drawing.Size(1516, 26);
             this.panel2.TabIndex = 36;
             // 
+            // btnGenerarPDF
+            // 
+            this.btnGenerarPDF.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerarPDF.BackgroundImage = global::PRY_SERVICESNOW.Properties.Resources.btn_generareporte;
+            this.btnGenerarPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGenerarPDF.Location = new System.Drawing.Point(602, 745);
+            this.btnGenerarPDF.Name = "btnGenerarPDF";
+            this.btnGenerarPDF.Size = new System.Drawing.Size(255, 68);
+            this.btnGenerarPDF.TabIndex = 35;
+            this.btnGenerarPDF.UseVisualStyleBackColor = false;
+            this.btnGenerarPDF.Click += new System.EventHandler(this.btnGenerarPDF_Click);
+            // 
+            // btn_ver
+            // 
+            this.btn_ver.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ver.BackgroundImage = global::PRY_SERVICESNOW.Properties.Resources.btn_reporte;
+            this.btn_ver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ver.Location = new System.Drawing.Point(602, 343);
+            this.btn_ver.Name = "btn_ver";
+            this.btn_ver.Size = new System.Drawing.Size(255, 68);
+            this.btn_ver.TabIndex = 34;
+            this.btn_ver.UseVisualStyleBackColor = false;
+            this.btn_ver.Click += new System.EventHandler(this.btn_ver_Click);
+            // 
             // frm_reportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(240)))), ((int)(((byte)(232)))));
             this.ClientSize = new System.Drawing.Size(1578, 844);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnGenerarPDF);
