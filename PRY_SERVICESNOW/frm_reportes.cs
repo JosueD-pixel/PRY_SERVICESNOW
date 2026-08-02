@@ -98,5 +98,10 @@ namespace PRY_SERVICESNOW
                 reportes.ExportarPDF(tabla, "Reporte de mobiliario asignado","MobiliarioAsignado.pdf");
             }
         }
+
+        private void dgv_reportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
