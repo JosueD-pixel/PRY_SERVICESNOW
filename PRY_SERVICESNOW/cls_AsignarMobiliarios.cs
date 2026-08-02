@@ -50,14 +50,30 @@ namespace PRY_SERVICESNOW
 
             using (var conexion = conexionBD.AbrirConexion())
             {
-                string sql = "SELECT id_mobiliario, nombre FROM tbl_mobiliario";
+                string sql = @"
+            SELECT 
+                m.id_mobiliario,
+                m.nombre,
+                m.descripcion,
+                m.cantidad AS Total,
+                IFNULL(SUM(a.cantidad_pasada), 0) AS Asignadas,
+                (m.cantidad - IFNULL(SUM(a.cantidad_pasada), 0)) AS disponibles
+            FROM tbl_mobiliario m
+            LEFT JOIN tbl_asignacion_mobiliario a
+                ON m.id_mobiliario = a.id_mobiliario
+            GROUP BY m.id_mobiliario, m.nombre, m.descripcion, m.cantidad;
+        ";
+
                 using (consulta = new MySqlDataAdapter(sql, conexion))
                 {
                     consulta.Fill(tabla);
                 }
             }
+
             return tabla;
         }
+
+
 
         public DataTable CargarDataGrid()
         {

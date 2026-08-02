@@ -145,16 +145,16 @@ namespace PRY_SERVICESNOW
 
                 // Obtener los datos de la fila
                 id_mobiliario = Convert.ToInt32(
-                    fila.Cells["Clave"].Value
+                    dgv_mobiliario.SelectedRows[0].Cells["id_mobiliario"].Value
                 );
 
                 txt_idMobiliario.Text = id_mobiliario.ToString();
 
                 txt_nombreMobiliario.Text = fila.Cells["Nombre"].Value?.ToString() ?? "";
 
-                txt_descripcion.Text = fila.Cells["Descripción"].Value.ToString();
+                txt_descripcion.Text = fila.Cells["descripcion"].Value.ToString();
 
-                txt_cantidad.Text = fila.Cells["Cantidad"].Value.ToString();
+                txt_cantidad.Text = fila.Cells["total"].Value.ToString();
 
                 // Evitar que se modifique el ID manualmente
                 txt_idMobiliario.ReadOnly = true;
@@ -190,7 +190,7 @@ namespace PRY_SERVICESNOW
                 }
 
                 int idSeleccionado = Convert.ToInt32(
-                    dgv_mobiliario.SelectedRows[0].Cells["Clave"].Value
+                   dgv_mobiliario.SelectedRows[0].Cells["id_mobiliario"].Value
                 );
 
                 DialogResult resp = MessageBox.Show(
@@ -256,5 +256,17 @@ namespace PRY_SERVICESNOW
                 );
             }
         }
+
+        private void frm_mobiliario_Load(object sender, EventArgs e)
+        {
+            cls_AsignarMobiliarios mobiliario = new cls_AsignarMobiliarios();
+            dgv_mobiliario.DataSource = mobiliario.CargarMobiliario();
+        }
+
+        private void pnl_mobiliario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
+

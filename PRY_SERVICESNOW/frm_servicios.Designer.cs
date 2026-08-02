@@ -36,13 +36,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_servicios = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txt_nombreServicio = new System.Windows.Forms.TextBox();
             this.btn_limpiar = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_idServicio = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.dgv_servicios = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_buscarServicio = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_servicios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_servicios)).BeginInit();
             this.panel1.SuspendLayout();
@@ -125,28 +125,26 @@
             // pnl_servicios
             // 
             this.pnl_servicios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.pnl_servicios.Controls.Add(this.label6);
+            this.pnl_servicios.Controls.Add(this.pictureBox4);
             this.pnl_servicios.Controls.Add(this.txt_nombreServicio);
             this.pnl_servicios.Controls.Add(this.btn_limpiar);
             this.pnl_servicios.Controls.Add(this.label3);
             this.pnl_servicios.Controls.Add(this.txt_idServicio);
             this.pnl_servicios.Controls.Add(this.label2);
-            this.pnl_servicios.Controls.Add(this.label4);
             this.pnl_servicios.Location = new System.Drawing.Point(80, 109);
             this.pnl_servicios.Name = "pnl_servicios";
             this.pnl_servicios.Size = new System.Drawing.Size(503, 650);
             this.pnl_servicios.TabIndex = 2;
             // 
-            // label6
+            // pictureBox4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label6.Location = new System.Drawing.Point(378, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 23);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "*automatico";
+            this.pictureBox4.Image = global::PRY_SERVICESNOW.Properties.Resources.img_servicios;
+            this.pictureBox4.Location = new System.Drawing.Point(26, 239);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(460, 301);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 20;
+            this.pictureBox4.TabStop = false;
             // 
             // txt_nombreServicio
             // 
@@ -187,6 +185,7 @@
             this.txt_idServicio.ReadOnly = true;
             this.txt_idServicio.Size = new System.Drawing.Size(238, 34);
             this.txt_idServicio.TabIndex = 14;
+            this.txt_idServicio.Visible = false;
             // 
             // label2
             // 
@@ -198,17 +197,6 @@
             this.label2.Size = new System.Drawing.Size(249, 38);
             this.label2.TabIndex = 5;
             this.label2.Text = "Datos del servicio";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.label4.Location = new System.Drawing.Point(21, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 28);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "ID del servicio";
             // 
             // dgv_servicios
             // 
@@ -285,7 +273,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
             this.btnModificar.Image = global::PRY_SERVICESNOW.Properties.Resources.boton_modificar;
-            this.btnModificar.Location = new System.Drawing.Point(369, 566);
+            this.btnModificar.Location = new System.Drawing.Point(371, 566);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(194, 62);
             this.btnModificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -380,6 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_servicios.ResumeLayout(false);
             this.pnl_servicios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_servicios)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -405,7 +394,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_idServicio;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox btn_guardar;
         private System.Windows.Forms.PictureBox btn_limpiar;
@@ -413,10 +401,10 @@
         private System.Windows.Forms.TextBox txt_buscarServicio;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnModificar;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
