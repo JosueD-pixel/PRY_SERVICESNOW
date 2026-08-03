@@ -58,37 +58,31 @@ namespace PRY_SERVICESNOW
 
         private void txt_buscar_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txt_buscar.Text))
-            {
-                MessageBox.Show("Ingrese la clave del trabajador a buscar.");
-                return;
-            }
-
             clsTrabajadores trabajador = new clsTrabajadores();
-            DataTable tabla = trabajador.Consultar(txt_buscar.Text.Trim());
 
-            if (tabla.Rows.Count == 0)
+            //Filtra el DataGridView dinámicamente
+            dgv_trabajadores.DataSource = trabajador.ConsultarGrid(txt_buscar.Text.Trim());
+
+            // Si hay coincidencias, llenar las cajas de texto con la primera fila
+            DataTable tabla = trabajador.ConsultarGrid(txt_buscar.Text.Trim());
+
+            if (tabla.Rows.Count > 0)
             {
-                MessageBox.Show("No se encontró el trabajador.");
-                return;
+                DataRow fila = tabla.Rows[0];
+
+                txt_clave.Text = fila["Clave"].ToString();
+                txt_nombre.Text = fila["Nombre"].ToString();
+                txt_apellidoP.Text = fila["Paterno"].ToString();
+                txt_apellidoM.Text = fila["Materno"].ToString();
+                txt_telefono.Text = fila["Telefono"].ToString();
+                txt_correo.Text = fila["Correo"].ToString();
+                txt_cp.Text = fila["CP"].ToString();
+                txt_calle.Text = fila["Calle"].ToString();
+                txt_colonia.Text = fila["Colonia"].ToString();
+
+                cmb_estado.SelectedIndex = Convert.ToInt32(fila["Estado"]);
+                cmb_puesto.SelectedValue = Convert.ToInt32(fila["Puesto"]);
             }
-
-            // Cargar datos en los TextBox
-            DataRow fila = tabla.Rows[0];
-
-            txt_clave.Text = fila["Clave"].ToString();
-            txt_nombre.Text = fila["Nombre"].ToString();
-            txt_apellidoP.Text = fila["Paterno"].ToString();
-            txt_apellidoM.Text = fila["Materno"].ToString();
-            txt_telefono.Text = fila["Telefono"].ToString();
-            txt_correo.Text = fila["Correo"].ToString();
-            txt_cp.Text = fila["CP"].ToString();
-            txt_calle.Text = fila["Calle"].ToString();
-            txt_colonia.Text = fila["Colonia"].ToString();
-            txt_password.Text = fila["Password"].ToString();
-
-            cmb_estado.SelectedIndex = Convert.ToInt32(fila["Estado"]);
-            cmb_puesto.SelectedValue = Convert.ToInt32(fila["Puesto"]);
 
 
         }

@@ -19,11 +19,6 @@ namespace PRY_SERVICESNOW
 
         }
 
-        private void pnl_superior_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_guardar_Click(object sender, EventArgs e)
         {
             try
@@ -111,6 +106,44 @@ namespace PRY_SERVICESNOW
                     return;
                 }
 
+                // Validación teléfono
+                if (txt_telefono.Text.Length != 10)
+                {
+                    MessageBox.Show("El teléfono debe contener exactamente 10 dígitos.");
+                    txt_telefono.Focus();
+                    return;
+                }
+
+                // Validación CP
+                if (txt_cp.Text.Length != 5)
+                {
+                    MessageBox.Show("El código postal debe contener 5 dígitos.");
+                    txt_cp.Focus();
+                    return;
+                }
+
+                // Validación formato correo
+                try
+                {
+                    var mail = new System.Net.Mail.MailAddress(txt_correo.Text.Trim());
+                }
+                catch
+                {
+                    MessageBox.Show("El correo electrónico no tiene un formato válido.");
+                    txt_correo.Focus();
+                    return;
+                }
+
+                // Validación correo duplicado
+                clsTrabajadores validar = new clsTrabajadores();
+                if (validar.CorreoExiste(txt_correo.Text.Trim()))
+                {
+                    MessageBox.Show("El correo electrónico ya existe en la base de datos.");
+                    txt_correo.Focus();
+                    return;
+                }
+
+
                 // Confirmación
                 DialogResult respuesta = MessageBox.Show(
                     "¿Desea guardar este registro?",
@@ -188,6 +221,41 @@ namespace PRY_SERVICESNOW
             cmb_estado.SelectedIndex = -1;
             cmb_puesto.SelectedIndex = -1;
 
+        }
+
+        private void txt_telefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+
+            if (txt_telefono.Text.Length >= 10 && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+
+        private void SoloLetras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_cp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+
+            if (txt_cp.Text.Length >= 5 && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

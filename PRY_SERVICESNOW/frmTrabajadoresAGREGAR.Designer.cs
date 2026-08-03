@@ -96,7 +96,6 @@ namespace PRY_SERVICESNOW
             this.pnl_superior.Name = "pnl_superior";
             this.pnl_superior.Size = new System.Drawing.Size(1578, 60);
             this.pnl_superior.TabIndex = 0;
-            this.pnl_superior.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_superior_Paint);
             // 
             // pictureBox3
             // 
@@ -202,6 +201,7 @@ namespace PRY_SERVICESNOW
             this.txt_cp.Name = "txt_cp";
             this.txt_cp.Size = new System.Drawing.Size(239, 34);
             this.txt_cp.TabIndex = 16;
+            this.txt_cp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_cp_KeyPress);
             // 
             // txt_nombre
             // 
@@ -211,6 +211,7 @@ namespace PRY_SERVICESNOW
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(239, 34);
             this.txt_nombre.TabIndex = 15;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras_KeyPress);
             // 
             // txt_apellidoP
             // 
@@ -220,6 +221,7 @@ namespace PRY_SERVICESNOW
             this.txt_apellidoP.Name = "txt_apellidoP";
             this.txt_apellidoP.Size = new System.Drawing.Size(239, 34);
             this.txt_apellidoP.TabIndex = 14;
+            this.txt_apellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras_KeyPress);
             // 
             // txt_apellidoM
             // 
@@ -229,6 +231,7 @@ namespace PRY_SERVICESNOW
             this.txt_apellidoM.Name = "txt_apellidoM";
             this.txt_apellidoM.Size = new System.Drawing.Size(239, 34);
             this.txt_apellidoM.TabIndex = 13;
+            this.txt_apellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoloLetras_KeyPress);
             // 
             // txt_clave
             // 
@@ -404,6 +407,7 @@ namespace PRY_SERVICESNOW
             this.txt_telefono.Name = "txt_telefono";
             this.txt_telefono.Size = new System.Drawing.Size(225, 34);
             this.txt_telefono.TabIndex = 21;
+            this.txt_telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_telefono_KeyPress);
             // 
             // label11
             // 

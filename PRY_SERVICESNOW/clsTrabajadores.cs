@@ -96,23 +96,25 @@ namespace PRY_SERVICESNOW
                 using (var conexion = conexionBD.AbrirConexion())
                 {
                     string sql = @"SELECT 
-                            clave_trabajador AS Clave,
-                            nombre AS Nombre,
-                            apellidoP AS Paterno,
-                            apellidoM AS Materno,
-                            telefono AS Telefono,
-                            correo AS Correo,
-                            codigo_postal AS CP,
-                            calle AS Calle,
-                            colonia AS Colonia,
-                            estado AS Estado
-                        FROM tbl_trabajadores
-                        WHERE clave_trabajador LIKE @dato
-                           OR nombre LIKE @dato
-                           OR apellidoP LIKE @dato
-                           OR apellidoM LIKE @dato
-                           OR correo LIKE @dato
-                           OR telefono LIKE @dato;";
+                    clave_trabajador AS Clave,
+                    nombre AS Nombre,
+                    apellidoP AS Paterno,
+                    apellidoM AS Materno,
+                    telefono AS Telefono,
+                    correo AS Correo,
+                    codigo_postal AS CP,
+                    calle AS Calle,
+                    colonia AS Colonia,
+                    estado AS Estado,
+                    password AS Password,     
+                    id_puesto AS Puesto        
+                FROM tbl_trabajadores
+                WHERE clave_trabajador LIKE @dato
+                   OR nombre LIKE @dato
+                   OR apellidoP LIKE @dato
+                   OR apellidoM LIKE @dato
+                   OR correo LIKE @dato
+                   OR telefono LIKE @dato;";
 
                     comando = new MySqlCommand(sql, conexion);
                     comando.Parameters.AddWithValue("@dato", "%" + dato + "%");
@@ -128,6 +130,7 @@ namespace PRY_SERVICESNOW
 
             return tabla;
         }
+
 
 
         // Eliminar trabajador
@@ -222,21 +225,67 @@ namespace PRY_SERVICESNOW
             return msg;
         }
 
-        // Limpiar panel
-        public void LimpiarPanel(Panel panel)
+       
+
+
+        public DataTable ConsultarGrid(string dato)
         {
-            foreach (Control control in panel.Controls)
+            tabla = new DataTable();
+
+            try
             {
-                if (control is TextBox txt)
-                    txt.Clear();
+                cls_Conexion conexionBD = new cls_Conexion();
+                using (var conexion = conexionBD.AbrirConexion())
+                {
+                    string sql = @"SELECT 
+                    clave_trabajador AS Clave,
+                    nombre AS Nombre,
+                    apellidoP AS Paterno,
+                    apellidoM AS Materno,
+                    telefono AS Telefono,
+                    correo AS Correo,
+                    codigo_postal AS CP,
+                    calle AS Calle,
+                    colonia AS Colonia,
+                    estado AS Estado,
+                    id_puesto AS Puesto
+                FROM tbl_trabajadores
+                WHERE clave_trabajador LIKE @dato
+                   OR nombre LIKE @dato
+                   OR apellidoP LIKE @dato
+                   OR apellidoM LIKE @dato
+                   OR correo LIKE @dato
+                   OR telefono LIKE @dato;";
 
-                if (control is ComboBox cmb)
-                    cmb.SelectedIndex = 0;
+                    comando = new MySqlCommand(sql, conexion);
+                    comando.Parameters.AddWithValue("@dato", "%" + dato + "%");
 
-                if (control is CheckBox chk)
-                    chk.Checked = false;
+                    adaptador = new MySqlDataAdapter(comando);
+                    adaptador.Fill(tabla);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al consultar trabajadores: " + ex.Message);
+            }
+
+            return tabla;
+        }
+
+        public bool CorreoExiste(string correo)
+        {
+            cls_Conexion conexionBD = new cls_Conexion();
+            using (var conexion = conexionBD.AbrirConexion())
+            {
+                string sql = "SELECT correo FROM tbl_trabajadores WHERE correo = @correo";
+                comando = new MySqlCommand(sql, conexion);
+                comando.Parameters.AddWithValue("@correo", correo);
+
+                var resultado = comando.ExecuteScalar();
+                return resultado != null;
             }
         }
+
 
     }
 }
