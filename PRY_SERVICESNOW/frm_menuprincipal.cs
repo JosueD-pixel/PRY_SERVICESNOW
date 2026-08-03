@@ -196,5 +196,18 @@ namespace PRY_SERVICESNOW
             menu = new cls_menu();
             menu.AgregarAlContenedor(new frm_reservas(), pnl_formulario);
         }
+
+        private void btn_eliminarReservas_Click(object sender, EventArgs e)
+        {
+            menu = new cls_menu();
+            menu.AgregarAlContenedor(new frm_cancelacion(), pnl_formulario);
+        }
+
+       
+        private void btn_buscaReservas_Click_1(object sender, EventArgs e)
+        {
+            menu = new cls_menu();
+            menu.AgregarAlContenedor(new frm_buscarReserva(), pnl_formulario);
+        }
     }
 }
