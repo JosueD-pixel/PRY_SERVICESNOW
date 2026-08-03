@@ -68,7 +68,7 @@ namespace PRY_SERVICESNOW
         t.colonia AS Colonia,
         t.estado AS Estado,
         p.puesto AS Puesto,
-        t.password AS Password   -- ✔ la contraseña vuelve
+        t.password AS Password   
     FROM tbl_trabajadores t
     INNER JOIN tbl_puesto p ON t.id_puesto = p.id_puesto;";
 
