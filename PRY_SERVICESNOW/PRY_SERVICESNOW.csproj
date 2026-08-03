@@ -119,6 +119,18 @@
     <Compile Include="frm_AsignarServicios.Designer.cs">
       <DependentUpon>frm_AsignarServicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_buscarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_buscarReserva.Designer.cs">
+      <DependentUpon>frm_buscarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cancelacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cancelacion.Designer.cs">
+      <DependentUpon>frm_cancelacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AsignarServicios.resx">
       <DependentUpon>frm_AsignarServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_buscarReserva.resx">
+      <DependentUpon>frm_buscarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cancelacion.resx">
+      <DependentUpon>frm_cancelacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
@@ -369,6 +387,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IMG_MOBILIARIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_long_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location_city_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icn_modificar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2026.7.1\build\net4\QuestPDF.targets')" />

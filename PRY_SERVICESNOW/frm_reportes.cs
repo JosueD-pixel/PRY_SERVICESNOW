@@ -23,6 +23,7 @@ namespace PRY_SERVICESNOW
         {
             ConfigurarDataGrid();
             CargarCombos();
+            ActualizarCombosPorConsulta();
         }
 
         private void ConfigurarDataGrid()
@@ -257,6 +258,53 @@ namespace PRY_SERVICESNOW
         }
 
 
+        private void ActualizarCombosPorConsulta()
+        {
+            // Consulta 1 Reservas
+            if (rdb_consulta1.Checked)
+            {
+                cmb_sala.Enabled = true;
+                cmb_servicio.Enabled = false;
+                cmb_mobiliario.Enabled = false;
 
+                cmb_servicio.SelectedIndex = 0;
+                cmb_mobiliario.SelectedIndex = 0;
+            }
+
+            // Consulta 2 Servicios asignados
+            else if (rdb_consulta2.Checked)
+            {
+                cmb_sala.Enabled = true;
+                cmb_servicio.Enabled = true;
+                cmb_mobiliario.Enabled = false;
+
+                cmb_mobiliario.SelectedIndex = 0;
+            }
+
+            // Consulta 3  Mobiliario asignado
+            else if (rdb_consulta3.Checked)
+            {
+                cmb_sala.Enabled = true;
+                cmb_servicio.Enabled = false;
+                cmb_mobiliario.Enabled = true;
+
+                cmb_servicio.SelectedIndex = 0;
+            }
+        }
+
+        private void rdb_consulta1_CheckedChanged(object sender, EventArgs e)
+        {
+            ActualizarCombosPorConsulta();
+        }
+
+        private void rdb_consulta2_CheckedChanged(object sender, EventArgs e)
+        {
+            ActualizarCombosPorConsulta();
+        }
+
+        private void rdb_consulta3_CheckedChanged(object sender, EventArgs e)
+        {
+            ActualizarCombosPorConsulta();
+        }
     }
 }

@@ -94,7 +94,7 @@ namespace PRY_SERVICESNOW
 
                 MessageBox.Show(
                     mensaje,
-                    "Servicios",
+                    "Mobiliario",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
