@@ -226,7 +226,9 @@ namespace PRY_SERVICESNOW
             }
 
             // FILTRO POR SERVICIO
-            if (cmb_servicio.Enabled == true && cmb_servicio.SelectedIndex != -1)
+            if (cmb_servicio.Enabled == true &&
+                cmb_servicio.SelectedIndex != -1 &&
+                tabla.Columns.Contains("Servicio"))
             {
                 if (cmb_servicio.Text != "Todos")
                 {
@@ -235,12 +237,14 @@ namespace PRY_SERVICESNOW
                         filtro += " AND ";
                     }
 
-                    filtro += $"Servicio = '{cmb_servicio.Text}'";
+                    filtro += $"Servicio = '{cmb_servicio.Text.Replace("'", "''")}'";
                 }
             }
 
             // FILTRO POR MOBILIARIO
-            if (cmb_mobiliario.Enabled == true && cmb_mobiliario.SelectedIndex != -1)
+            if (cmb_mobiliario.Enabled == true &&
+               cmb_mobiliario.SelectedIndex != -1 &&
+               tabla.Columns.Contains("Mobiliario"))
             {
                 if (cmb_mobiliario.Text != "Todos")
                 {
@@ -249,7 +253,7 @@ namespace PRY_SERVICESNOW
                         filtro += " AND ";
                     }
 
-                    filtro += $"Mobiliario = '{cmb_mobiliario.Text}'";
+                    filtro += $"Mobiliario = '{cmb_mobiliario.Text.Replace("'", "''")}'";
                 }
             }
 
@@ -267,7 +271,7 @@ namespace PRY_SERVICESNOW
                 cmb_servicio.Enabled = false;
                 cmb_mobiliario.Enabled = false;
 
-                cmb_servicio.SelectedIndex = 0;
+                cmb_servicio.SelectedIndex = 0; 
                 cmb_mobiliario.SelectedIndex = 0;
             }
 

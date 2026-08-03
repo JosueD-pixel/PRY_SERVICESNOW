@@ -45,7 +45,12 @@ namespace PRY_SERVICESNOW
             if (!asignacion.ValidarAsignacion(asignacion.Id_sala, asignacion.Id_mobiliario, asignacion.Cantidad_pasada))
                 return;
 
-            MessageBox.Show(asignacion.GuardarAsignacion());
+            MessageBox.Show(
+                asignacion.GuardarAsignacion(),
+                "Registro de asignación",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
             CargarTabla();
             Limpiar();
 
@@ -55,13 +60,24 @@ namespace PRY_SERVICESNOW
         {
             if (asignacion.Eliminar())
             {
-                MessageBox.Show("Asignación eliminada.");
+                MessageBox.Show(
+                    "Asignación eliminada correctamente.",
+                    "Eliminación exitosa",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
                 CargarTabla();
                 Limpiar();
             }
             else
             {
-                MessageBox.Show("No se pudo eliminar.");
+                MessageBox.Show(
+                    "No se pudo eliminar la asignación.",
+                    "Error al eliminar",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
         }
 
@@ -71,15 +87,25 @@ namespace PRY_SERVICESNOW
 
             if (asignacion.ModificarCantidad())
             {
-                MessageBox.Show("Cantidad modificada correctamente.");
+                MessageBox.Show(
+                    "Cantidad modificada correctamente.",
+                    "Modificación exitosa",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
                 CargarTabla();
                 Limpiar();
             }
             else
             {
-                MessageBox.Show("No se pudo modificar.");
+                MessageBox.Show(
+                    "No se pudo modificar la cantidad.",
+                    "Error al modificar",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
-
         }
 
         private void dgv_asignaciones_CellClick(object sender, DataGridViewCellEventArgs e)
