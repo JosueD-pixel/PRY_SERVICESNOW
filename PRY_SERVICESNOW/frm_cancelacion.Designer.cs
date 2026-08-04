@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -67,30 +69,30 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.txt_telefono = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nud_horaFinal = new System.Windows.Forms.NumericUpDown();
+            this.txt_motivo = new System.Windows.Forms.TextBox();
+            this.nud_horaInicio = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmb_trabajador = new System.Windows.Forms.ComboBox();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
+            this.cmb_salas = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btn_cancelar = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_motivoCancelacion = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.vtp_fechaCancelacion = new System.Windows.Forms.DateTimePicker();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dgv_reservas = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -106,13 +108,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaFinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaInicio)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reservas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -514,13 +516,12 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.panel4.Controls.Add(this.dgv_reservas);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Location = new System.Drawing.Point(85, 66);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1419, 369);
             this.panel4.TabIndex = 10;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label6
             // 
@@ -533,38 +534,27 @@
             this.label6.TabIndex = 56;
             this.label6.Text = "Reservas registradas ";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1376, 260);
-            this.dataGridView1.TabIndex = 12;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.numericUpDown2);
-            this.panel5.Controls.Add(this.txt_telefono);
-            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.nud_horaFinal);
+            this.panel5.Controls.Add(this.txt_motivo);
+            this.panel5.Controls.Add(this.nud_horaInicio);
             this.panel5.Controls.Add(this.label17);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.comboBox1);
-            this.panel5.Controls.Add(this.dateTimePicker1);
-            this.panel5.Controls.Add(this.comboBox2);
+            this.panel5.Controls.Add(this.cmb_trabajador);
+            this.panel5.Controls.Add(this.dtp_fecha);
+            this.panel5.Controls.Add(this.cmb_salas);
             this.panel5.Location = new System.Drawing.Point(85, 458);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(574, 342);
             this.panel5.TabIndex = 11;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label3
             // 
@@ -588,29 +578,29 @@
             this.label12.TabIndex = 42;
             this.label12.Text = "Fecha: ";
             // 
-            // numericUpDown2
+            // nud_horaFinal
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(388, 191);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(87, 22);
-            this.numericUpDown2.TabIndex = 54;
+            this.nud_horaFinal.Location = new System.Drawing.Point(388, 191);
+            this.nud_horaFinal.Name = "nud_horaFinal";
+            this.nud_horaFinal.Size = new System.Drawing.Size(87, 22);
+            this.nud_horaFinal.TabIndex = 54;
             // 
-            // txt_telefono
+            // txt_motivo
             // 
-            this.txt_telefono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_telefono.Location = new System.Drawing.Point(129, 233);
-            this.txt_telefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_telefono.Multiline = true;
-            this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(346, 93);
-            this.txt_telefono.TabIndex = 45;
+            this.txt_motivo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_motivo.Location = new System.Drawing.Point(129, 233);
+            this.txt_motivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_motivo.Multiline = true;
+            this.txt_motivo.Name = "txt_motivo";
+            this.txt_motivo.Size = new System.Drawing.Size(346, 93);
+            this.txt_motivo.TabIndex = 45;
             // 
-            // numericUpDown1
+            // nud_horaInicio
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(206, 191);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(87, 22);
-            this.numericUpDown1.TabIndex = 53;
+            this.nud_horaInicio.Location = new System.Drawing.Point(206, 191);
+            this.nud_horaInicio.Name = "nud_horaInicio";
+            this.nud_horaInicio.Size = new System.Drawing.Size(87, 22);
+            this.nud_horaInicio.TabIndex = 53;
             // 
             // label17
             // 
@@ -678,57 +668,57 @@
             this.label4.TabIndex = 50;
             this.label4.Text = "Final: ";
             // 
-            // comboBox1
+            // cmb_trabajador
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(129, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(346, 36);
-            this.comboBox1.TabIndex = 47;
+            this.cmb_trabajador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_trabajador.FormattingEnabled = true;
+            this.cmb_trabajador.Location = new System.Drawing.Point(129, 31);
+            this.cmb_trabajador.Name = "cmb_trabajador";
+            this.cmb_trabajador.Size = new System.Drawing.Size(346, 36);
+            this.cmb_trabajador.TabIndex = 47;
             // 
-            // dateTimePicker1
+            // dtp_fecha
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(129, 139);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(346, 31);
-            this.dateTimePicker1.TabIndex = 49;
+            this.dtp_fecha.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fecha.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fecha.Location = new System.Drawing.Point(129, 139);
+            this.dtp_fecha.Name = "dtp_fecha";
+            this.dtp_fecha.Size = new System.Drawing.Size(346, 31);
+            this.dtp_fecha.TabIndex = 49;
             // 
-            // comboBox2
+            // cmb_salas
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(129, 83);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(346, 36);
-            this.comboBox2.TabIndex = 48;
+            this.cmb_salas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_salas.FormattingEnabled = true;
+            this.cmb_salas.Location = new System.Drawing.Point(129, 83);
+            this.cmb_salas.Name = "cmb_salas";
+            this.cmb_salas.Size = new System.Drawing.Size(346, 36);
+            this.cmb_salas.TabIndex = 48;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Controls.Add(this.btn_cancelar);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.label8);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.txt_motivoCancelacion);
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.dateTimePicker2);
+            this.panel6.Controls.Add(this.vtp_fechaCancelacion);
             this.panel6.Location = new System.Drawing.Point(930, 458);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(574, 342);
             this.panel6.TabIndex = 56;
             // 
-            // pictureBox6
+            // btn_cancelar
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.pictureBox6.Image = global::PRY_SERVICESNOW.Properties.Resources.btn_cancelar;
-            this.pictureBox6.Location = new System.Drawing.Point(369, 268);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(178, 58);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 56;
-            this.pictureBox6.TabStop = false;
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_cancelar.Image = global::PRY_SERVICESNOW.Properties.Resources.btn_cancelar;
+            this.btn_cancelar.Location = new System.Drawing.Point(369, 268);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(178, 58);
+            this.btn_cancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_cancelar.TabIndex = 56;
+            this.btn_cancelar.TabStop = false;
             // 
             // label7
             // 
@@ -740,7 +730,6 @@
             this.label7.Size = new System.Drawing.Size(236, 28);
             this.label7.TabIndex = 55;
             this.label7.Text = "Datos de la cancelacion";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -753,15 +742,15 @@
             this.label8.TabIndex = 42;
             this.label8.Text = "Fecha: ";
             // 
-            // textBox1
+            // txt_motivoCancelacion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(131, 106);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(416, 152);
-            this.textBox1.TabIndex = 45;
+            this.txt_motivoCancelacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_motivoCancelacion.Location = new System.Drawing.Point(131, 106);
+            this.txt_motivoCancelacion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_motivoCancelacion.Multiline = true;
+            this.txt_motivoCancelacion.Name = "txt_motivoCancelacion";
+            this.txt_motivoCancelacion.Size = new System.Drawing.Size(416, 152);
+            this.txt_motivoCancelacion.TabIndex = 45;
             // 
             // label11
             // 
@@ -774,14 +763,14 @@
             this.label11.TabIndex = 46;
             this.label11.Text = "Motivo:";
             // 
-            // dateTimePicker2
+            // vtp_fechaCancelacion
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(131, 39);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(407, 31);
-            this.dateTimePicker2.TabIndex = 49;
+            this.vtp_fechaCancelacion.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vtp_fechaCancelacion.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vtp_fechaCancelacion.Location = new System.Drawing.Point(140, 39);
+            this.vtp_fechaCancelacion.Name = "vtp_fechaCancelacion";
+            this.vtp_fechaCancelacion.Size = new System.Drawing.Size(407, 31);
+            this.vtp_fechaCancelacion.TabIndex = 49;
             // 
             // pictureBox4
             // 
@@ -792,6 +781,44 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 57;
             this.pictureBox4.TabStop = false;
+            // 
+            // dgv_reservas
+            // 
+            this.dgv_reservas.AllowUserToAddRows = false;
+            this.dgv_reservas.AllowUserToDeleteRows = false;
+            this.dgv_reservas.AllowUserToResizeColumns = false;
+            this.dgv_reservas.AllowUserToResizeRows = false;
+            this.dgv_reservas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.dgv_reservas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_reservas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_reservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_reservas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_reservas.EnableHeadersVisualStyles = false;
+            this.dgv_reservas.Location = new System.Drawing.Point(43, 65);
+            this.dgv_reservas.MultiSelect = false;
+            this.dgv_reservas.Name = "dgv_reservas";
+            this.dgv_reservas.ReadOnly = true;
+            this.dgv_reservas.RowHeadersVisible = false;
+            this.dgv_reservas.RowHeadersWidth = 51;
+            this.dgv_reservas.RowTemplate.Height = 24;
+            this.dgv_reservas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_reservas.Size = new System.Drawing.Size(1340, 271);
+            this.dgv_reservas.TabIndex = 57;
+            this.dgv_reservas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_reservas_CellClick);
             // 
             // frm_cancelacion
             // 
@@ -810,6 +837,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_cancelacion";
             this.Text = "frm_cancelacion";
+            this.Load += new System.EventHandler(this.frm_cancelacion_Load);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -830,15 +858,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaFinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaInicio)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reservas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -855,29 +883,28 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nud_horaFinal;
+        private System.Windows.Forms.NumericUpDown nud_horaInicio;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtp_fecha;
+        private System.Windows.Forms.ComboBox cmb_salas;
+        private System.Windows.Forms.ComboBox cmb_trabajador;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txt_telefono;
+        private System.Windows.Forms.TextBox txt_motivo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_motivoCancelacion;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.DateTimePicker vtp_fechaCancelacion;
+        private System.Windows.Forms.PictureBox btn_cancelar;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -908,5 +935,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.DataGridView dgv_reservas;
     }
 }

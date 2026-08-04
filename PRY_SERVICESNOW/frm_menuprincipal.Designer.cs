@@ -61,6 +61,7 @@
             this.btn_salasMobiliario = new System.Windows.Forms.PictureBox();
             this.btn_salaAgregar = new System.Windows.Forms.PictureBox();
             this.btn_salas = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_menu = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
             this.pnl_menu.SuspendLayout();
@@ -90,12 +91,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_salasMobiliario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salaAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
             // 
             this.pnl_superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.pnl_superior.Controls.Add(this.pictureBox1);
             this.pnl_superior.Controls.Add(this.lblUsuario);
             this.pnl_superior.Controls.Add(this.lblRol);
             this.pnl_superior.Controls.Add(this.label1);
@@ -456,6 +459,17 @@
             this.btn_salas.TabStop = false;
             this.btn_salas.Click += new System.EventHandler(this.btn_salas_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.minimizaR;
+            this.pictureBox1.Location = new System.Drawing.Point(1834, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // btn_menu
             // 
             this.btn_menu.Image = global::PRY_SERVICESNOW.Properties.Resources.icono_menu;
@@ -510,6 +524,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_salasMobiliario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salaAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).EndInit();
             this.ResumeLayout(false);
 
@@ -550,5 +565,6 @@
         private System.Windows.Forms.Panel pnl_formulario;
         private System.Windows.Forms.PictureBox btn_Reportes;
         private System.Windows.Forms.PictureBox btn_modificarReservas;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
