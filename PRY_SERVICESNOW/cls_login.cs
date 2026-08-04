@@ -75,8 +75,13 @@ namespace PRY_SERVICESNOW
                                 UsuarioActual = clave;
                                 AsignarPermisos();
 
-                                // Si no tiene permisos para entrar al sistema
-                                if (!esAdministrador && !esRecepcionista && !esTrabajador)
+                                if (esTrabajador)
+                                {
+                                    throw new Exception("El puesto de Trabajador no tiene permisos para acceder al sistema");
+                                }
+
+                                // Solo permitir Administrador o Recepcionista
+                                if (!esAdministrador && !esRecepcionista)
                                 {
                                     throw new Exception($"El perfil {nombreRol} no tiene permisos para acceder");
                                 }

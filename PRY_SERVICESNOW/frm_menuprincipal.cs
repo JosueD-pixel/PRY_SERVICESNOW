@@ -28,8 +28,8 @@ namespace PRY_SERVICESNOW
             this.WindowState = FormWindowState.Maximized;
             menu = new cls_menu();
 
-            lblUsuario.Text = "Usuario: " + cls_login.UsuarioActual;
-            lblRol.Text = "Rol: " + menu.ObtenerNombreRol(cls_login.Rol);
+            lblUsuario.Text = "Clave: " + cls_login.UsuarioActual;
+            lblRol.Text = "Puesto: " + menu.ObtenerNombreRol(cls_login.Rol);
 
             menu.ConfigurarMenuPorRol(
                 pnl_salas,

@@ -44,6 +44,7 @@
             this.btn_Mobiliario = new System.Windows.Forms.PictureBox();
             this.btn_Servicios = new System.Windows.Forms.PictureBox();
             this.btn_buscaReservas = new System.Windows.Forms.PictureBox();
+            this.btn_modificarReservas = new System.Windows.Forms.PictureBox();
             this.btn_eliminarReservas = new System.Windows.Forms.PictureBox();
             this.btn_agregarReserva = new System.Windows.Forms.PictureBox();
             this.btn_reservas = new System.Windows.Forms.PictureBox();
@@ -61,7 +62,6 @@
             this.btn_salaAgregar = new System.Windows.Forms.PictureBox();
             this.btn_salas = new System.Windows.Forms.PictureBox();
             this.btn_menu = new System.Windows.Forms.PictureBox();
-            this.btn_modificarReservas = new System.Windows.Forms.PictureBox();
             this.pnl_superior.SuspendLayout();
             this.pnl_menu.SuspendLayout();
             this.pnl_reservas.SuspendLayout();
@@ -73,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Mobiliario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Servicios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_buscaReservas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_modificarReservas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminarReservas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_agregarReserva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reservas)).BeginInit();
@@ -90,7 +91,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_salaAgregar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_modificarReservas)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
@@ -111,7 +111,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsuario.Location = new System.Drawing.Point(1673, 9);
+            this.lblUsuario.Location = new System.Drawing.Point(1106, 9);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(117, 38);
             this.lblUsuario.TabIndex = 3;
@@ -122,11 +122,11 @@
             this.lblRol.AutoSize = true;
             this.lblRol.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblRol.Location = new System.Drawing.Point(1314, 9);
+            this.lblRol.Location = new System.Drawing.Point(747, 9);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(53, 38);
+            this.lblRol.Size = new System.Drawing.Size(114, 38);
             this.lblRol.TabIndex = 2;
-            this.lblRol.Text = "rol";
+            this.lblRol.Text = "Puesto:";
             // 
             // label1
             // 
@@ -271,6 +271,15 @@
             this.btn_buscaReservas.TabIndex = 5;
             this.btn_buscaReservas.TabStop = false;
             this.btn_buscaReservas.Click += new System.EventHandler(this.btn_buscaReservas_Click_1);
+            // 
+            // btn_modificarReservas
+            // 
+            this.btn_modificarReservas.Location = new System.Drawing.Point(98, 139);
+            this.btn_modificarReservas.Name = "btn_modificarReservas";
+            this.btn_modificarReservas.Size = new System.Drawing.Size(149, 39);
+            this.btn_modificarReservas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_modificarReservas.TabIndex = 4;
+            this.btn_modificarReservas.TabStop = false;
             // 
             // btn_eliminarReservas
             // 
@@ -458,15 +467,6 @@
             this.btn_menu.TabStop = false;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
-            // btn_modificarReservas
-            // 
-            this.btn_modificarReservas.Location = new System.Drawing.Point(98, 139);
-            this.btn_modificarReservas.Name = "btn_modificarReservas";
-            this.btn_modificarReservas.Size = new System.Drawing.Size(149, 39);
-            this.btn_modificarReservas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_modificarReservas.TabIndex = 4;
-            this.btn_modificarReservas.TabStop = false;
-            // 
             // frm_menuprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -493,6 +493,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Mobiliario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Servicios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_buscaReservas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_modificarReservas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminarReservas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_agregarReserva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_reservas)).EndInit();
@@ -510,7 +511,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_salaAgregar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_modificarReservas)).EndInit();
             this.ResumeLayout(false);
 
         }

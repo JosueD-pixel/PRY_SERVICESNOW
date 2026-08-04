@@ -124,8 +124,8 @@
   <data name="Imagen5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagen5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_derecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_derecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="location_city_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\location_city_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,29 +148,29 @@
   <data name="boton_guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_apoyo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_apoyo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_selection_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_selection_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_trabajadores" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_trabajadores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_derecha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_derecha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_reservas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_reservas1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IMG_MOBILIARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_MOBILIARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_serviciosicn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_serviciosicn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_mobiliarioicn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_mobiliarioicn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,8 +178,8 @@
   <data name="img_salasboton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_salasboton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_reservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_reservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boton_servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_salas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_salas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +190,14 @@
   <data name="btn_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_apoyo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_apoyo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_apoyo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_apoyo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icn_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icn_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icn_mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icn_mini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,6 +217,9 @@
   <data name="img_hojablanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_hojablanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="boton_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,14 +229,11 @@
   <data name="btn_mobiliario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_mobiliario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_selection_ingresar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_selection_ingresar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_apoyo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_apoyo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton_agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="img_inicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_inicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_apoyo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_apoyo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,17 +241,23 @@
   <data name="boton_eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton_eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_trabajadores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_trabajadores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_reservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_reservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="botonReporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\botonReporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="servicios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\servicios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_serviciosicn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_serviciosicn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_ASIGNARMOBILIARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_ASIGNARMOBILIARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,8 +271,8 @@
   <data name="img_apoyo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_apoyo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="boton_limpiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boton_limpiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="services1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_elisesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_elisesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,10 +295,7 @@
   <data name="icon_reporte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_reporte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="location_city_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\location_city_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icn_modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icn_modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_reservar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_reservar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

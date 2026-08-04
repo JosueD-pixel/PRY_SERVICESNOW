@@ -86,15 +86,21 @@ namespace PRY_SERVICESNOW
             // RECEPCIONISTA
             else if (cls_login.EsRecepcionista)
             {
+                // Panel de salas: NO visible
                 pnl_salas.Visible = false;
+                
+
+                // Panel de trabajadores: NO visible
                 pnl_trabajadores.Visible = false;
-                pnl_reservas.Visible = false;
+
+                // Panel de reservas: SÍ visible
+                pnl_reservas.Visible = true;
 
                 // NO debe ver mobiliario ni servicios
                 btnServicios.Visible = false;
                 btnMobiliario.Visible = false;
 
-                // Salas: solo buscar
+                // Salas: NO puede agregar, modificar ni eliminar
                 btn_salaAgregar.Visible = false;
                 btn_salasModificar.Visible = false;
                 btn_salasEliminar.Visible = false;

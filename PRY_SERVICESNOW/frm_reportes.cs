@@ -143,7 +143,7 @@ namespace PRY_SERVICESNOW
                     DataTable dt = new DataTable();
                     dt.Load(cmd.ExecuteReader());
 
-                    // Insertar opción TODOS
+                    
                     DataRow filaTodos = dt.NewRow();
                     filaTodos["id_sala"] = 0;
                     filaTodos["nombre"] = "Todos";

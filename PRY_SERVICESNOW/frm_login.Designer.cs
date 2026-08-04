@@ -127,7 +127,7 @@
             // 
             // pbc_fondo
             // 
-            this.pbc_fondo.Image = global::PRY_SERVICESNOW.Properties.Resources.img_inicio;
+            this.pbc_fondo.Image = global::PRY_SERVICESNOW.Properties.Resources.services1;
             this.pbc_fondo.Location = new System.Drawing.Point(12, 36);
             this.pbc_fondo.Name = "pbc_fondo";
             this.pbc_fondo.Size = new System.Drawing.Size(460, 350);

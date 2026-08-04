@@ -163,6 +163,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_cancelar {
+            get {
+                object obj = ResourceManager.GetObject("btn_cancelar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_generareporte {
             get {
                 object obj = ResourceManager.GetObject("btn_generareporte", resourceCulture);
@@ -523,6 +533,16 @@ namespace PRY_SERVICESNOW.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_reservar {
+            get {
+                object obj = ResourceManager.GetObject("img_reservar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_reservas1 {
             get {
                 object obj = ResourceManager.GetObject("img_reservas1", resourceCulture);
@@ -616,6 +636,16 @@ namespace PRY_SERVICESNOW.Properties {
         internal static System.Drawing.Bitmap receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48 {
             get {
                 object obj = ResourceManager.GetObject("receipt_long_off_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap services1 {
+            get {
+                object obj = ResourceManager.GetObject("services1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
