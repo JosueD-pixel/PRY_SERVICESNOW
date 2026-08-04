@@ -28,48 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_superior = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txt_semana = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nud_horaFinal = new System.Windows.Forms.NumericUpDown();
+            this.nud_horaInicio = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
+            this.cmb_sala = new System.Windows.Forms.ComboBox();
+            this.cmb_trabajador = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.txt_telefono = new System.Windows.Forms.TextBox();
+            this.txt_motivo = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.btn_Reservar = new System.Windows.Forms.PictureBox();
+            this.btn_semanaSiguiente = new System.Windows.Forms.PictureBox();
+            this.btn_semanaAnterior = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgv_horario = new System.Windows.Forms.DataGridView();
             this.pnl_superior.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaFinal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Reservar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_semanaSiguiente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_semanaAnterior)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_horario)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_superior
@@ -84,36 +86,6 @@
             this.pnl_superior.Name = "pnl_superior";
             this.pnl_superior.Size = new System.Drawing.Size(1578, 60);
             this.pnl_superior.TabIndex = 3;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.receipt_long_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48;
-            this.pictureBox1.Location = new System.Drawing.Point(768, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -156,11 +128,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.panel4.Controls.Add(this.dgv_horario);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.pictureBox5);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Controls.Add(this.btn_semanaSiguiente);
+            this.panel4.Controls.Add(this.btn_semanaAnterior);
+            this.panel4.Controls.Add(this.txt_semana);
             this.panel4.Location = new System.Drawing.Point(74, 83);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(899, 704);
@@ -177,91 +149,50 @@
             this.label6.TabIndex = 43;
             this.label6.Text = "Calendario semanal";
             // 
-            // pictureBox5
+            // txt_semana
             // 
-            this.pictureBox5.Image = global::PRY_SERVICESNOW.Properties.Resources.img_derecha;
-            this.pictureBox5.Location = new System.Drawing.Point(551, 48);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PRY_SERVICESNOW.Properties.Resources.img_izquierda;
-            this.pictureBox4.Location = new System.Drawing.Point(201, 48);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(269, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 31);
-            this.textBox1.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 104);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(860, 572);
-            this.dataGridView1.TabIndex = 0;
+            this.txt_semana.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semana.Location = new System.Drawing.Point(269, 58);
+            this.txt_semana.Name = "txt_semana";
+            this.txt_semana.Size = new System.Drawing.Size(276, 31);
+            this.txt_semana.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
-            this.panel5.Controls.Add(this.pictureBox6);
-            this.panel5.Controls.Add(this.numericUpDown2);
-            this.panel5.Controls.Add(this.numericUpDown1);
+            this.panel5.Controls.Add(this.btn_Reservar);
+            this.panel5.Controls.Add(this.nud_horaFinal);
+            this.panel5.Controls.Add(this.nud_horaInicio);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.dateTimePicker1);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.dtp_fecha);
+            this.panel5.Controls.Add(this.cmb_sala);
+            this.panel5.Controls.Add(this.cmb_trabajador);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.txt_telefono);
+            this.panel5.Controls.Add(this.txt_motivo);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Location = new System.Drawing.Point(1012, 83);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(507, 704);
             this.panel5.TabIndex = 8;
             // 
-            // pictureBox6
+            // nud_horaFinal
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
-            this.pictureBox6.Image = global::PRY_SERVICESNOW.Properties.Resources.img_reservar;
-            this.pictureBox6.Location = new System.Drawing.Point(296, 618);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(178, 58);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 42;
-            this.pictureBox6.TabStop = false;
+            this.nud_horaFinal.Location = new System.Drawing.Point(328, 356);
+            this.nud_horaFinal.Name = "nud_horaFinal";
+            this.nud_horaFinal.Size = new System.Drawing.Size(87, 22);
+            this.nud_horaFinal.TabIndex = 41;
             // 
-            // numericUpDown2
+            // nud_horaInicio
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(328, 356);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(87, 22);
-            this.numericUpDown2.TabIndex = 41;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(128, 356);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(87, 22);
-            this.numericUpDown1.TabIndex = 40;
+            this.nud_horaInicio.Location = new System.Drawing.Point(128, 356);
+            this.nud_horaInicio.Name = "nud_horaInicio";
+            this.nud_horaInicio.Size = new System.Drawing.Size(87, 22);
+            this.nud_horaInicio.TabIndex = 40;
             // 
             // label5
             // 
@@ -296,32 +227,32 @@
             this.label4.TabIndex = 37;
             this.label4.Text = "Final: ";
             // 
-            // dateTimePicker1
+            // dtp_fecha
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(128, 221);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(346, 31);
-            this.dateTimePicker1.TabIndex = 36;
+            this.dtp_fecha.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fecha.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_fecha.Location = new System.Drawing.Point(128, 221);
+            this.dtp_fecha.Name = "dtp_fecha";
+            this.dtp_fecha.Size = new System.Drawing.Size(346, 31);
+            this.dtp_fecha.TabIndex = 36;
             // 
-            // comboBox2
+            // cmb_sala
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(128, 165);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(346, 36);
-            this.comboBox2.TabIndex = 35;
+            this.cmb_sala.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_sala.FormattingEnabled = true;
+            this.cmb_sala.Location = new System.Drawing.Point(128, 165);
+            this.cmb_sala.Name = "cmb_sala";
+            this.cmb_sala.Size = new System.Drawing.Size(346, 35);
+            this.cmb_sala.TabIndex = 35;
             // 
-            // comboBox1
+            // cmb_trabajador
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(128, 113);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(346, 36);
-            this.comboBox1.TabIndex = 34;
+            this.cmb_trabajador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_trabajador.FormattingEnabled = true;
+            this.cmb_trabajador.Location = new System.Drawing.Point(128, 113);
+            this.cmb_trabajador.Name = "cmb_trabajador";
+            this.cmb_trabajador.Size = new System.Drawing.Size(346, 36);
+            this.cmb_trabajador.TabIndex = 34;
             // 
             // label3
             // 
@@ -367,15 +298,15 @@
             this.label17.TabIndex = 27;
             this.label17.Text = "Sala:";
             // 
-            // txt_telefono
+            // txt_motivo
             // 
-            this.txt_telefono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_telefono.Location = new System.Drawing.Point(128, 439);
-            this.txt_telefono.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_telefono.Multiline = true;
-            this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(346, 93);
-            this.txt_telefono.TabIndex = 29;
+            this.txt_motivo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_motivo.Location = new System.Drawing.Point(128, 439);
+            this.txt_motivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_motivo.Multiline = true;
+            this.txt_motivo.Name = "txt_motivo";
+            this.txt_motivo.Size = new System.Drawing.Size(346, 93);
+            this.txt_motivo.TabIndex = 29;
             // 
             // label12
             // 
@@ -387,6 +318,106 @@
             this.label12.Size = new System.Drawing.Size(77, 28);
             this.label12.TabIndex = 26;
             this.label12.Text = "Fecha: ";
+            // 
+            // btn_Reservar
+            // 
+            this.btn_Reservar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            this.btn_Reservar.Image = global::PRY_SERVICESNOW.Properties.Resources.img_reservar;
+            this.btn_Reservar.Location = new System.Drawing.Point(296, 618);
+            this.btn_Reservar.Name = "btn_Reservar";
+            this.btn_Reservar.Size = new System.Drawing.Size(178, 58);
+            this.btn_Reservar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Reservar.TabIndex = 42;
+            this.btn_Reservar.TabStop = false;
+            // 
+            // btn_semanaSiguiente
+            // 
+            this.btn_semanaSiguiente.Image = global::PRY_SERVICESNOW.Properties.Resources.img_derecha;
+            this.btn_semanaSiguiente.Location = new System.Drawing.Point(551, 48);
+            this.btn_semanaSiguiente.Name = "btn_semanaSiguiente";
+            this.btn_semanaSiguiente.Size = new System.Drawing.Size(62, 50);
+            this.btn_semanaSiguiente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_semanaSiguiente.TabIndex = 3;
+            this.btn_semanaSiguiente.TabStop = false;
+            this.btn_semanaSiguiente.Click += new System.EventHandler(this.btn_semanaSiguiente_Click);
+            // 
+            // btn_semanaAnterior
+            // 
+            this.btn_semanaAnterior.Image = global::PRY_SERVICESNOW.Properties.Resources.img_izquierda;
+            this.btn_semanaAnterior.Location = new System.Drawing.Point(201, 48);
+            this.btn_semanaAnterior.Name = "btn_semanaAnterior";
+            this.btn_semanaAnterior.Size = new System.Drawing.Size(62, 50);
+            this.btn_semanaAnterior.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_semanaAnterior.TabIndex = 2;
+            this.btn_semanaAnterior.TabStop = false;
+            this.btn_semanaAnterior.Click += new System.EventHandler(this.btn_semanaAnterior_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox3.Location = new System.Drawing.Point(1506, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PRY_SERVICESNOW.Properties.Resources.img_hojablanca;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PRY_SERVICESNOW.Properties.Resources.receipt_long_50dp_E3E3E3_FILL0_wght400_GRAD0_opsz48;
+            this.pictureBox1.Location = new System.Drawing.Point(768, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dgv_horario
+            // 
+            this.dgv_horario.AllowUserToAddRows = false;
+            this.dgv_horario.AllowUserToDeleteRows = false;
+            this.dgv_horario.AllowUserToResizeColumns = false;
+            this.dgv_horario.AllowUserToResizeRows = false;
+            this.dgv_horario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(199)))), ((int)(((byte)(184)))));
+            this.dgv_horario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(64)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_horario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_horario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(123)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_horario.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_horario.EnableHeadersVisualStyles = false;
+            this.dgv_horario.Location = new System.Drawing.Point(37, 116);
+            this.dgv_horario.MultiSelect = false;
+            this.dgv_horario.Name = "dgv_horario";
+            this.dgv_horario.ReadOnly = true;
+            this.dgv_horario.RowHeadersVisible = false;
+            this.dgv_horario.RowHeadersWidth = 51;
+            this.dgv_horario.RowTemplate.Height = 24;
+            this.dgv_horario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_horario.Size = new System.Drawing.Size(825, 512);
+            this.dgv_horario.TabIndex = 44;
             // 
             // frm_reservas
             // 
@@ -403,21 +434,22 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_reservas";
             this.Text = "frm_reservas";
+            this.Load += new System.EventHandler(this.frm_reservas_Load);
             this.pnl_superior.ResumeLayout(false);
             this.pnl_superior.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaFinal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_horaInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Reservar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_semanaSiguiente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_semanaAnterior)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_horario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -434,25 +466,25 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox btn_semanaSiguiente;
+        private System.Windows.Forms.PictureBox btn_semanaAnterior;
+        private System.Windows.Forms.TextBox txt_semana;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txt_telefono;
+        private System.Windows.Forms.TextBox txt_motivo;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nud_horaInicio;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dtp_fecha;
+        private System.Windows.Forms.ComboBox cmb_sala;
+        private System.Windows.Forms.ComboBox cmb_trabajador;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.PictureBox btn_Reservar;
+        private System.Windows.Forms.NumericUpDown nud_horaFinal;
+        private System.Windows.Forms.DataGridView dgv_horario;
     }
 }

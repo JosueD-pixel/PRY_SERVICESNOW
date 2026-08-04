@@ -209,5 +209,10 @@ namespace PRY_SERVICESNOW
             menu = new cls_menu();
             menu.AgregarAlContenedor(new frm_buscarReserva(), pnl_formulario);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
